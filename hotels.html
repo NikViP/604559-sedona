@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона (Николай Пушкарев)</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="wrapper">
+  <header class="header">
+    <!--todo вставить верхний логотип-уголок при помощи CSS-->
+    <nav class="navigation">
+      <ul>
+        <li><a href="info.html">информация</a></li>
+        <li><a href="media.html">фото и видео</a></li>
+        <li><a class="header-logo" href="index.html"></a>
+        <li>
+        <li><a href="maps-state.html">карта штата</a></li>
+        <li><a href="hotels.html">гостиницы</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container-hotels">
+    <h1 class="visually-hidden">Поиск отеля</h1>
+    <!--todo фоновая картинка hotels-banner.jpg-->
+    <section class="filters-hotels">
+      <h2 class="visually-hidden">Выбор отеля</h2>
+      <form class="filter" method="get" action="#">
+        <!--todo ссылки в форме пока нет-->
+        <fieldset class="infrastructure">
+          <legend>инфраструктура:</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="pool" checked>
+              бассейн
+              <!--todo В Баребершопе (скринкаст) для input дописан класс filter-input разобраться зачем-->
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="parking">
+              парковка
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="wi-fi">
+              wi-fi
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="housing">
+          <legend>тип жилья:</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="hotel" checked>
+              гостиница
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="motel" checked>
+              мотель
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="apartment" checked>
+              апартаменты
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="cost">
+          <legend>стоимость в сутки (р):</legend>
+          <input type="range" min="0" max="3000" step="10" value="100">
+          <button type="submit" class="filter-button button">показать</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <section class="filters-result">
+      <h2 class="visually-hidden">Результат выбора отеля</h2>
+      <h3 class="sort">найдено:</h3>
+      <input name="found" type="text" value="3">
+      <h3 class="sort">сортировка:</h3>
+      <ul class="sort-list">
+        <li class="sort-item-price"><a href="#price">по цене</a></li>
+        <li class="sort-item-type"><a href="#type">по типу</a></li>
+        <li class="sort-item-rating"><a href="#rating">по рейтингу</a></li>
+      </ul>
+      <!--todo стрелки-треугольники сделать при помощи псевдоэлементов-->
+      <ul class="result-list">
+        <li></li>
+      </ul>
+    </section>
+
+    <section class="result">
+      <h2 class="visually-hidden">Список отелей</h2>
+      <ul class="result-list">
+        <li class="result-item">
+          <h3>
+            <a href="hotel-Amara_Resort.html">Amara Resort & Spa</a>
+          </h3>
+          <a href="hotel-Amara_Resort.html">
+            <img src="img/hotel-Amara_Resort.jpg" width="135" height="90" alt="отель Amara Resort & Spa">
+          </a>
+          <p>
+            <span>гостиница</span>
+            <span>от 3500 р.</span>
+          </p>
+          <p>
+            <a href="hotel-Amara_Resort.html" class="">подробнее</a>
+            <button type="submit" class="book-button button">забронировать</button>
+            <span>рейтинг: 8,5</span>
+            <!--todo звездочки рейтинга сделать при помощи псевдоэлементов-->
+          </p>
+        </li>
+        <li class="result-item">
+          <h3>
+            <a href="hotel-Desert_Quail_Inn.html">Desert Quail Inn</a>
+          </h3>
+          <a href="hotel-Desert_Quail_Inn.html">
+            <img src="img/hotel-Desert_Quail_Inn.jpg" width="135" height="90" alt="отель Desert Quail Inn">
+          </a>
+          <p>
+            <span>мотель</span>
+            <span>от 2000 р.</span>
+          </p>
+          <p>
+            <a href="hotel-Desert_Quail_Inn.html" class="">подробнее</a>
+            <button type="submit" class="book-button button">забронировать</button>
+            <span>рейтинг: 8,9</span>
+            <!--todo звездочки рейтинга сделать при помощи псевдоэлементов-->
+          </p>
+        </li>
+        <li class="result-item">
+          <h3>
+            <a href="hotel-Villas_at_Poco_Diablo.html">Villas at Poco Diablo</a>
+          </h3>
+          <a href="hotel-Villas_at_Poco_Diablo.html">
+            <img src="img/hotel-Villas_at_Poco_Diablo.jpg" width="135" height="90" alt="отель Villas at Poco Diablo">
+          </a>
+          <p>
+            <span>апартаменты</span>
+            <span>от 4000 р.</span>
+          </p>
+          <p>
+            <a href="hotel-Villas_at_Poco_Diablo.html" class="">подробнее</a>
+            <button type="submit" class="book-button button">забронировать</button>
+            <span>рейтинг: 9,2</span>
+            <!--todo звездочки рейтинга сделать при помощи псевдоэлементов-->
+          </p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <span class="main-footer-logo">#visitsedona</span>
+    <ul class="footer-social">
+      <li><a class="social-button social-button-vk" href="#">Вконтакте</a></li>
+      <li><a class="social-button social-button-fb" href="#">Фейсбук</a></li>
+      <li><a class="social-button social-button-in" href="#">Инстаграм</a></li>
+    </ul>
+    <p class="main-footer-copyright">
+      <span>website by</span>
+      <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+      <!--todo логотип академии подключить-->
+    </p>
+  </footer>
+</div>
+<!--todo подключать скрипты JS-->
+</body>
+</html>
+
