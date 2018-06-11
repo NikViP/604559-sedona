@@ -36,27 +36,32 @@
       <p>Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
       <ul class="reasons-list">
         <li class="reasons-item">
-          <!--todo порядковый номер при помощи CSS???Нет в HTML-->
           <h3>Настоящий городок</h3>
+          <span class="number">1</span>
+          <!--todo "черточки" у порядковых номеров :after и :before в CSS-->
           <img src="img/small-town.jpg" width="800" height="256" alt="Маленький городок">
           <p>Седона не атракцион для туристов, там течет своя жизнь</p>
         </li>
         <li class="reasons-item">
           <!--todo переносы строк делать при помощи width для h3, без <br>-->
           <h3>Там есть мост дьявола</h3>
+          <span class="number">2</span>
           <img src="img/devil's-bridge.jpg" width="800" height="256" alt="Мост дъявола">
           <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </li>
         <li class="reasons-item">
           <h3>Небольшая площадь</h3>
+          <span class="number">3</span>
           <p>Все достопримечательности находятся очень близко</p>
         </li>
         <li class="reasons-item">
           <h3>Красивая дорога</h3>
+          <span class="number">4</span>
           <p>Ехать в седону из Лас-Вегаса совсем не скучно!</p>
         </li>
         <li class="reasons-item">
           <h3>Мало туристов</h3>
+          <span class="number">5</span>
           <p>Большинство едет в Гранд Каньон и толпится там</p>
         </li>
       </ul>
@@ -97,17 +102,24 @@
           <!--todo иконка календаря в CSS-->
 
           <label class="form-label" for="count-adult">Взрослые:</label>
+          <input type="button" value="-" onClick="change('amount',0,10,-1);"/>
+          <input class="form-input-count" type="text" name="count-adult" id="count-adult" value="2">
+          <input type="button" value="+" onClick="change('amount',0,10, 1);"/>
+
+          <label class="form-label" for="count-adult">Дети:</label>
+          <input type="button" value="-" onClick="change('amount',0,10,-1);"/>
+          <input class="form-input-count" type="text" name="count-children" id="count-children" value="0">
+          <input type="button" value="+" onClick="change('amount',0,10, 1);"/>
+
+          <!--label class="form-label" for="count-adult">Взрослые:</label>
           <span class="minus">-</span>
           <input class="form-input-count" type="text" name="count-adult" id="count-adult" value="2">
           <span class="plus">+</span>
-          <!--todo ??? Валидатор ругается на min="1" пришлось убрать ???-->
-          <!--todo ??? или плюс и минус в CSS ???-->
 
           <label class="form-label" for="count-children">Дети:</label>
           <span class="minus">-</span>
           <input class="form-input-count" type="text" name="count-children" id="count-children" value="0">
-          <span class="plus">+</span>
-          <!--todo ??? или плюс и минус в CSS ???-->
+          <span class="plus">+</span-->
 
           <button class="find-button" type="submit" value="Найти">Найти</button>
         </fieldset>
@@ -135,7 +147,7 @@
     <div class="main-footer-copyright">
       <span>website by</span>
       <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
-      <!--todo логотип академии подключить-->
+      <!--todo логотип академии подключить к ссылке-->
     </div>
   </footer>
 </div>
