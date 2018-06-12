@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона (Николай Пушкарев)</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -13,7 +14,7 @@
   <header class="header">
     <!--todo вставить верхний логотип-уголок при помощи CSS-->
     <nav class="navigation">
-      <ul>
+      <ul class="navigation-list">
         <li><a href="info.html">информация</a></li>
         <li><a href="media.html">фото и видео</a></li>
         <li><a class="header-logo" href="index.html"></li>
@@ -32,7 +33,7 @@
         <!--todo ссылки в форме пока нет-->
         <fieldset class="infrastructure">
           <legend>инфраструктура:</legend>
-          <ul>
+          <ul class="filter-list">
             <li class="filter-option">
               <input class="visually-hidden filter-input-checkbox" type="checkbox" name="pool" checked>
               бассейн
@@ -50,7 +51,7 @@
         </fieldset>
         <fieldset class="housing">
           <legend>тип жилья:</legend>
-          <ul>
+          <ul class="filter-list">
             <li class="filter-option">
               <input class="visually-hidden filter-input-checkbox" type="checkbox" name="hotel" checked>
               гостиница
