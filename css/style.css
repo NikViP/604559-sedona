@@ -16,6 +16,14 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .navigation {
   font-size: 14px;
   line-height: 26px;
@@ -71,6 +79,40 @@ a {
 .sort-link:visited {
   color: rgb(0, 0, 0);
 }
+
+.wrapper {
+  min-width: 1200px;
+}
+
+.main-billboard {
+  position: relative;
+  height: 510px;
+  background-color: #81b3d2;
+  background-image: url(../img/main-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .wrapper {
   width: 1200px;
