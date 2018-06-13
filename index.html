@@ -27,8 +27,8 @@
   <main class="container">
     <div class="main-billboard">
       <h1 class="visually-hidden">Добро пожаловать в великолепный Седона</h1>
-      <!--img src="img/main-banner.jpg" width="1200" height="510" alt="Седона"-->
-      <span class="group-inscriptions"><img src="img/group-inscriptions.png" width="458" height="352" alt="Welcome to Sedona"></span>
+      <span class="group-inscriptions"><img src="img/group-inscriptions.png" width="458" height="352"
+                                            alt="Welcome to Sedona"></span>
     </div>
 
     <section class="reasons">
@@ -108,9 +108,9 @@
           <input type="button" value="+" onClick="change('amount',0,10, 1);"/>
 
           <label class="form-label" for="count-adult">Дети:</label>
-          <input type="button" value="-" onClick="change('amount',0,10,-1);"/>
+          <input type="button" value="-">
           <input class="form-input-count" type="text" name="count-children" id="count-children" value="0">
-          <input type="button" value="+" onClick="change('amount',0,10, 1);"/>
+          <input type="button" value="+">
 
           <!--label class="form-label" for="count-adult">Взрослые:</label>
           <span class="minus">-</span>
@@ -129,13 +129,12 @@
 
     <section class="map">
       <h3 class="visually-hidden">Карта Google</h3>
-      <!--img src="img/map.png" width="1200" height="593" alt=""-->
+      <!--img src="img/map-google.png" width="1200" height="473" alt="Карта Google"-->
+      <!--todo сделать статичную "подложку" карты тегом IMG-->
       <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838162.8369633064!2d-111.79513845!3d34.854378399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+AZ%2C+USA!5e0!3m2!1sen!2sru!4v1435000602855"
           allowfullscreen="" width="1200" height="593">
       </iframe>
-      <!--todo Атрибут frameborder элемента iframe устарел. Вместо этого используйте CSS-->
-      <!--todo сделать статичную "подложку" карты тегом IMG-->
     </section>
   </main>
 
