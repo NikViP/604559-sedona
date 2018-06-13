@@ -19,6 +19,7 @@ a {
 .navigation {
   font-size: 14px;
   line-height: 26px;
+  font-weight: bold;
 }
 
 .navigation-list,
@@ -32,20 +33,50 @@ a {
   list-style: none;
 }
 
+.navigation-link {
+  color: rgb(0, 0, 0);
+}
 
+.navigation-link:hover {
+  color: rgb(129, 179, 210);
+}
 
+.navigation-link:active {
+  color: rgba(0, 0, 0, 0.302);
+}
 
+.navigation-link:visited {
+  color: rgb(118, 99, 87);
+}
 
+.sort-link {
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.302);
+  border-bottom: 1px dotted #81b3d2;
+  -moz-transform: matrix(3.50541372649093, 0, 0, 3.50541372649093, 0, 0);
+  -webkit-transform: matrix(3.50541372649093, 0, 0, 3.50541372649093, 0, 0);
+  -ms-transform: matrix(3.50541372649093, 0, 0, 3.50541372649093, 0, 0);
+}
 
+.sort-link:hover {
+  color: rgb(129, 179, 210);
+  border-bottom: 1px dotted #81b3d2;
+}
 
+.sort-link:active {
+  color: rgb(118, 99, 87);
+}
 
-
-
+.sort-link:visited {
+  color: rgb(0, 0, 0);
+}
 
 main .container {
   width: 1200px;
-</*todo не забыть сделать тень от контейнера*/>
-  box-shadow: ;
+  /*todo не забыть сделать тень от контейнера*/
+  box-shadow: none;
+  /*todo none -- временное значение*/
 }
 
 
