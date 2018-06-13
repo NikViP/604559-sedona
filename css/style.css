@@ -1,9 +1,50 @@
 body {
-<!--todo задать цвет фона-->
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
 }
+
+a {
+  text-decoration: none;
+}
+
+.navigation {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.navigation-list,
+.reasons-list,
+.reasons-list,
+.footer-social,
+.recommendation-list,
+.filter-list,
+.sort-list,
+.result-list {
+  list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
 
 main .container {
   width: 1200px;
+</*todo не забыть сделать тень от контейнера*/>
   box-shadow: ;
 }
 
