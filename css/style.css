@@ -72,11 +72,16 @@ a {
   color: rgb(0, 0, 0);
 }
 
-main .container {
+.wrapper {
   width: 1200px;
+<<<<<<< HEAD
   /*todo не забыть сделать тень от контейнера*/
   box-shadow: none;
   /*todo none -- временное значение*/
+=======
+/*todo сделать тень от контейнера*/
+  box-shadow: ;
+>>>>>>> f0dd1c737b9fc9347552600a81945e8fd5ac38cb
 }
 
 
