@@ -42,9 +42,9 @@ a {
 
 
 
-main .container {
+.wrapper {
   width: 1200px;
-</*todo не забыть сделать тень от контейнера*/>
+/*todo сделать тень от контейнера*/
   box-shadow: ;
 }
 
