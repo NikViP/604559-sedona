@@ -55,7 +55,8 @@ a {
   list-style: none;
 }
 
-.navigation-link {
+.navigation-link,
+.navigation-link:visited {
   color: rgb(0, 0, 0);
 }
 
@@ -67,18 +68,38 @@ a {
   color: rgba(0, 0, 0, 0.302);
 }
 
-.navigation-link:visited {
+.navigation-list .navigation-link-active {
   color: rgb(118, 99, 87);
 }
+
+/*
+.sort-list a {
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.302);
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sort-list a:hover {
+  color: rgb(129, 179, 210);
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sort-list a:active {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.sort-list a:visited {
+  color: rgb(129, 179, 210);
+}
+*/
 
 .sort-link {
   font-size: 12px;
   line-height: 18px;
   color: rgba(0, 0, 0, 0.302);
   border-bottom: 1px dotted #81b3d2;
-  -moz-transform: matrix(3.50541372649093, 0, 0, 3.50541372649093, 0, 0);
-  -webkit-transform: matrix(3.50541372649093, 0, 0, 3.50541372649093, 0, 0);
-  -ms-transform: matrix(3.50541372649093, 0, 0, 3.50541372649093, 0, 0);
 }
 
 .sort-link:hover {
@@ -87,11 +108,13 @@ a {
 }
 
 .sort-link:active {
-  color: rgb(118, 99, 87);
+  color: rgb(0, 0, 0);
+  border-bottom: none;
 }
 
-.sort-link:visited {
-  color: rgb(0, 0, 0);
+.sort-link-active {
+  color: rgb(129, 179, 210);
+  border-bottom: none;
 }
 
 .hotels-name {
