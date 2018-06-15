@@ -26,26 +26,37 @@
   <main class="container">
     <div class="main-billboard">
       <h1 class="visually-hidden">Добро пожаловать в великолепный Седона</h1>
-      <span class="group-inscriptions"><img src="img/group-inscriptions.png" width="458" height="352" alt="Welcome to Sedona"></span>
+      <span class="group-inscriptions"><img src="img/group-inscriptions.png" width="458" height="352"
+                                            alt="Welcome to Sedona"></span>
     </div>
 
     <section class="reasons">
-      <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-      <p>Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
+      <div class="center-wrapper">
+        <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p>Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
+      </div>
       <ol class="reasons-list">
         <li class="reasons-item">
-          <h3>Настоящий городок</h3>
-          <span class="number">1</span>
-          <!--todo "черточки" у порядковых номеров :after и :before в CSS-->
-          <img src="img/small-town.jpg" width="800" height="256" alt="Маленький городок">
-          <p>Седона не атракцион для туристов, там течет своя жизнь</p>
+          <div class="reasons-text">
+            <h3>Настоящий городок</h3>
+            <span class="number">1</span>
+            <!--todo "черточки" у порядковых номеров :after и :before в CSS-->
+            <p>Седона не атракцион для туристов, там течет своя жизнь</p>
+          </div>
+          <div class="reasons-img">
+            <img src="img/small-town.jpg" width="800" height="256" alt="Маленький городок">
+          </div>
         </li>
         <li class="reasons-item">
           <!--todo переносы строк делать при помощи width для h3, без <br>-->
-          <h3>Там есть мост дьявола</h3>
-          <span class="number">2</span>
-          <img src="img/devil's-bridge.jpg" width="800" height="256" alt="Мост дъявола">
-          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          <div class="reasons-text">
+            <h3>Там есть мост дьявола</h3>
+            <span class="number">2</span>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
+          <div class="reasons-img">
+            <img src="img/devil's-bridge.jpg" width="800" height="256" alt="Мост дъявола">
+          </div>
         </li>
         <li class="reasons-item">
           <h3>Небольшая площадь</h3>
@@ -62,29 +73,28 @@
           <span class="number">5</span>
           <p>Большинство едет в Гранд Каньон и толпится там</p>
         </li>
+        <li class="recommendation">
+          <h2 class="visually-hidden">Рекомендации</h2>
+          <ul class="recommendation-list">
+            <li class="recommendation-item">
+              <h3>Жильё</h3>
+              <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </li>
+            <li class="recommendation-item">
+              <h3>Еда</h3>
+              <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+            </li>
+            <li class="recommendation-item">
+              <h3>Сувениры</h3>
+              <p>Не только китайского, но и местного производства!</p>
+            </li>
+          </ul>
+        </li>
       </ol>
     </section>
 
-    <section class="recommendation">
-      <h3 class="visually-hidden">Рекомендации</h3>
-      <ul class="recommendation-list">
-        <li class="recommendation-item">
-          <h3>Жильё</h3>
-          <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-        </li>
-        <li class="recommendation-item">
-          <h3>Еда</h3>
-          <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
-        </li>
-        <li class="recommendation-item">
-          <h3>Сувениры</h3>
-          <p>Не только китайского, но и местного производства!</p>
-        </li>
-      </ul>
-    </section>
-
     <section class="invitation">
-      <h3>Заинтересовались?</h3>
+      <span>Заинтересовались?</span>
       <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <div class="invitation-header">
         <h2>Поиск гостиницы в Седоне</h2>
@@ -109,16 +119,6 @@
           <input type="button" value="-">
           <input class="form-input-count" type="text" name="count-children" id="count-children" value="0">
           <input type="button" value="+">
-
-          <!--label class="form-label" for="count-adult">Взрослые:</label>
-          <span class="minus">-</span>
-          <input class="form-input-count" type="text" name="count-adult" id="count-adult" value="2">
-          <span class="plus">+</span>
-
-          <label class="form-label" for="count-children">Дети:</label>
-          <span class="minus">-</span>
-          <input class="form-input-count" type="text" name="count-children" id="count-children" value="0">
-          <span class="plus">+</span-->
 
           <button class="find-button" type="submit" value="Найти">Найти</button>
         </fieldset>
@@ -146,7 +146,7 @@
     <div class="main-footer-copyright">
       <span>website by</span>
       <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
-      <!--todo логотип академии подключить к ссылке-->
+      <img src="img/logo_academy.png" class="logo-academy">
     </div>
   </footer>
 </div>
