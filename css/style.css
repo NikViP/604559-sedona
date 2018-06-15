@@ -1,8 +1,151 @@
 body {
-  задать цвет фона
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #ffffff;
 }
 
-main .container {
-  width: 1200px;
-  box-shadow: ;
+a {
+  text-decoration: none;
 }
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.wrapper {
+  min-width: 1200px;
+  /*todo сделать тень от контейнера*/
+  box-shadow: none;
+  /*todo none -- временное значение*/
+}
+
+.main-billboard {
+  position: relative;
+  height: 510px;
+  background-color: #81b3d2;
+  background-image: url(../img/main-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navigation {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.navigation-list,
+.reasons-list,
+.reasons-list,
+.footer-social,
+.recommendation-list,
+.filter-list,
+.sort-list,
+.result-list {
+  list-style: none;
+}
+
+.navigation-link,
+.navigation-link:visited {
+  color: rgb(0, 0, 0);
+}
+
+.navigation-link:hover {
+  color: rgb(129, 179, 210);
+}
+
+.navigation-link:active {
+  color: rgba(0, 0, 0, 0.302);
+}
+
+.navigation-list .navigation-link-active {
+  color: rgb(118, 99, 87);
+}
+
+/*
+.sort-list a {
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.302);
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sort-list a:hover {
+  color: rgb(129, 179, 210);
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sort-list a:active {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.sort-list a:visited {
+  color: rgb(129, 179, 210);
+}
+*/
+
+.sort-link {
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.302);
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sort-link:hover {
+  color: rgb(129, 179, 210);
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sort-link:active {
+  color: rgb(0, 0, 0);
+  border-bottom: none;
+}
+
+.sort-link-active {
+  color: rgb(129, 179, 210);
+  border-bottom: none;
+}
+
+.hotels-name {
+  font-size: 21px;
+  line-height: 26px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.hotels-name:hover {
+  color: rgb(129, 179, 210);
+}
+
+.hotels-name:active {
+  color: rgba(0, 0, 0, 0.302);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
