@@ -133,9 +133,19 @@ a {
   color: rgba(0, 0, 0, 0.302);
 }
 
+/*Пока не понимаю как задать нужные цвета иконке
+.logo-academy {
+  background: rgb(0, 0, 0);
+}
 
+.logo-academy:hover {
+  background: rgb(129, 179, 210);
+}
 
-
+.logo-academy:active {
+  background: rgba(0, 0, 0, 0.302);
+}
+*/
 
 
 
