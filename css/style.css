@@ -110,14 +110,30 @@ a {
 .center-wrapper h2 {
   margin-bottom: 40px;
 }
-/*
+
 .reasons-list {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
 }
 
-.reasons-list .reasons-item {
+.reasons-list li {
+  height: 260px;
+}
+
+ol li:first-child {
+  order: -2
+}
+
+.recommendation {
+  order: -1;
+}
+
+.reasons-item-banner {
   display: flex;
+  color: #ffffff;
 }
 
 .reasons-text {
@@ -128,6 +144,21 @@ a {
 .reasons-img {
   flex-grow: 2;
 }
+
+.recommendation-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.recommendation-list li {
+  height: 330px; /*??? размер переопределён, но блок "залазит" под следующий, а не отталкивает его ???*/
+
+}
+
+/*
+
 
 ul.recommendation-list {
   display: flex;
