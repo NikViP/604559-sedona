@@ -24,13 +24,14 @@
   </header>
 
   <main class="container">
+    <!--todo сделать тень для .container-->
     <div class="main-billboard">
       <h1 class="visually-hidden">Добро пожаловать в великолепный Седона</h1>
       <span class="group-inscriptions"><img src="img/group-inscriptions.png" width="458" height="352" alt="Welcome to Sedona"></span>
     </div>
 
     <section class="reasons">
-      <div class="center-wrapper">
+      <div class="title">
         <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p>Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
       </div>
@@ -39,7 +40,7 @@
         <li class="reasons-item-banner">
           <div class="reasons-text">
             <h3>Настоящий городок</h3>
-            <span class="number">1</span>
+            <span class="numbers">1</span>
             <!--todo "черточки" у порядковых номеров :after и :before в CSS-->
             <!--todo переносы строк делать при помощи width для h3, без <br>-->
             <p>Седона не атракцион для туристов, там течет своя жизнь</p>
@@ -51,7 +52,7 @@
         <li class="reasons-item-banner reverse">
           <div class="reasons-text">
             <h3>Там есть<br>мост дьявола</h3>
-            <span class="number">2</span>
+            <span class="numbers">2</span>
             <p class="long-p">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
           <div class="reasons-img">
@@ -77,15 +78,15 @@
           <h2 class="visually-hidden">Рекомендации</h2>
           <ul class="recommendation-list">
             <li class="recommendation-item">
-              <h3>Жильё</h3>
+              <h3 class="housing">Жильё</h3>
               <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
             <li class="recommendation-item">
-              <h3>Еда</h3>
+              <h3 class="food">Еда</h3>
               <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
             </li>
             <li class="recommendation-item">
-              <h3>Сувениры</h3>
+              <h3 class="gifts">Сувениры</h3>
               <p>Не только китайского, но и местного производства!</p>
             </li>
           </ul>
@@ -94,7 +95,7 @@
     </section>
 
     <section class="invitation-header">
-      <h2 class="interest">Заинтересовались?</h2>
+      <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <a class="button invitation-button" href="#">Поиск гостиницы в Седоне</a>
     </section>
@@ -132,22 +133,22 @@
       <!--img src="img/map-google.png" width="1200" height="473" alt="Карта Google"-->
       <!--todo сделать статичную "подложку" карты тегом IMG-->
       <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838162.8369633064!2d-111.79513845!3d34.854378399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+AZ%2C+USA!5e0!3m2!1sen!2sru!4v1435000602855" allowfullscreen="" width="1200" height="593">
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838162.8369633064!2d-111.79513845!3d34.854378399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+AZ%2C+USA!5e0!3m2!1sen!2sru!4v1435000602855"
+          allowfullscreen="" width="1200" height="593">
       </iframe>
     </section>
   </main>
 
   <footer class="main-footer">
-    <span class="main-footer-logo">#visitsedona</span>
+    <div class="footer-logo">#visitsedona</div>
     <ul class="footer-social">
-      <li><a class="social-button social-button-vk" href="#">Вконтакте</a></li>
-      <li><a class="social-button social-button-fb" href="#">Фейсбук</a></li>
-      <li><a class="social-button social-button-in" href="#">Инстаграм</a></li>
+      <li><a class="social-button social-button-vk" href="#">ВК</a></li>
+      <li><a class="social-button social-button-fb" href="#">ФБ</a></li>
+      <li><a class="social-button social-button-in" href="#">ИН</a></li>
     </ul>
-    <div class="main-footer-copyright">
+    <div class="footer-copyright">
       <span>website by</span>
-      <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
-      <img src="img/logo_academy.png" class="logo-academy" alt="HTML Academy">
+      <a class="button" href="https://htmlacademy.ru"><img src="img/logo_academy.png" class="logo-academy" alt="HTML Academy"></a>
     </div>
   </footer>
 </div>
