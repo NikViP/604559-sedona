@@ -26,8 +26,7 @@
   <main class="container">
     <div class="main-billboard">
       <h1 class="visually-hidden">Добро пожаловать в великолепный Седона</h1>
-      <span class="group-inscriptions"><img src="img/group-inscriptions.png" width="458" height="352"
-                                            alt="Welcome to Sedona"></span>
+      <span class="group-inscriptions"><img src="img/group-inscriptions.png" width="458" height="352" alt="Welcome to Sedona"></span>
     </div>
 
     <section class="reasons">
@@ -49,11 +48,11 @@
             <img src="img/small-town.jpg" width="800" height="260" alt="Маленький городок">
           </div>
         </li>
-        <li class="reasons-item-banner">
+        <li class="reasons-item-banner reverse">
           <div class="reasons-text">
-            <h3>Там есть мост дьявола</h3>
+            <h3>Там есть<br>мост дьявола</h3>
             <span class="number">2</span>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <p class="long-p">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
           <div class="reasons-img">
             <img src="img/devil's-bridge.jpg" width="800" height="260" alt="Мост дъявола">
@@ -72,7 +71,7 @@
         <li class="reasons-item">
           <h3>Мало туристов</h3>
           <span class="number">5</span>
-          <p>Большинство едет в Гранд Каньон и толпится там</p>
+          <p>Большинство едет в Гранд Каньон<br>и толпится там</p>
         </li>
         <li class="recommendation">
           <h2 class="visually-hidden">Рекомендации</h2>
@@ -94,12 +93,14 @@
       </ol>
     </section>
 
-    <section class="invitation">
-      <span>Заинтересовались?</span>
+    <section class="invitation-header">
+      <h2 class="interest">Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <div class="invitation-header">
-        <h2>Поиск гостиницы в Седоне</h2>
-      </div>
+      <a class="button invitation-button" href="#">Поиск гостиницы в Седоне</a>
+    </section>
+
+    <section class="invitation-body">
+      <h3 class="visually-hidden">Заполнение данных формы</h3>
       <form class="invitation-form" action="#" method="post">
         <fieldset class="invitation-fieldset">
           <legend class="visually-hidden">Бронирование гостиницы</legend>
@@ -121,7 +122,7 @@
           <input class="form-input-count" type="text" name="count-children" id="count-children" value="0">
           <input type="button" value="+">
 
-          <button class="find-button" type="submit" value="Найти">Найти</button>
+          <button class="button find-button" type="submit" value="Найти">Найти</button>
         </fieldset>
       </form>
     </section>

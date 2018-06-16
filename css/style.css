@@ -111,6 +111,37 @@ a {
   margin-bottom: 40px;
 }
 
+ol li:first-child {
+  order: -2
+}
+
+.reasons h2 {
+  width: 450px;
+}
+
+.reasons h3 {
+  /*width: 160px;/*??? При задании принудительной ширины для получения правильных переносов текст сдвигается влево и не желает быть по центру*/
+  text-align: center;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.reasons-list p {
+  width: 260px;
+}
+
+.recommendation-list p {
+  width: 290px;
+}
+
+.reasons-list .long-p {
+  width: 320px;/*??? Очень не нравится такой класс, но не смог придумать, как перенести строку в нужном месте.*/
+}
+
+.reasons-list li {
+  height: 260px;
+}
+
 .reasons-list {
   margin: 0;
   padding: 0;
@@ -119,30 +150,29 @@ a {
   width: 1200px;
 }
 
-.reasons-list li {
-  height: 260px;
-}
-
-ol li:first-child {
-  order: -2
-}
-
-.recommendation {
-  order: -1;
-}
-
 .reasons-item-banner {
   display: flex;
   color: #ffffff;
 }
 
+.reasons-item-banner.reverse {
+  flex-direction: row-reverse;
+}
+
 .reasons-text {
   flex-grow: 1;
+  width: 400px; /*??? вынужденно задал эту ширину потому, что при задании ширины абзацам ".reasons-list p" почему-то сужался и этот элемент тоже ???*/
   background-color: #81b3d2;
 }
 
 .reasons-img {
   flex-grow: 2;
+  background-size: 800px 260px;/*??? задал размер "подложки" под картинку, но при проверке, при отключении картинки фон "схлопывается" ???*/
+  background-color: #c4c4c4;
+}
+
+.recommendation {
+  order: -1;
 }
 
 .recommendation-list {
@@ -154,21 +184,17 @@ ol li:first-child {
 
 .recommendation-list li {
   height: 330px; /*??? размер переопределён, но блок "залазит" под следующий, а не отталкивает его ???*/
-
 }
 
-/*
-
-
-ul.recommendation-list {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  height: 330px;
+.reasons-item,
+.recommendation-item {
+  width: 400px;
 }
-*/
 
+.interest {
+  font-size: 30px;
+  font-weight: bold;
+}
 
 
 
