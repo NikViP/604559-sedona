@@ -16,6 +16,10 @@ a {
   text-decoration: none;
 }
 
+fieldset {
+  border: none;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -98,16 +102,16 @@ a {
   margin: auto;
 }
 
-.title {
+.reasons-title {
   margin-bottom: 60px;
   padding: 0;
 }
 
-.title h2, p {
+.reasons-title h2, p {
   margin: auto;
 }
 
-.title h2 {
+.reasons-title h2 {
   margin-bottom: 40px;
 }
 
@@ -131,7 +135,7 @@ ol li:first-child {
 }
 
 .reasons-list .long-p {
-  width: 320px;/*??? Очень не нравится такой класс, но не смог придумать, как перенести строку в нужном месте.*/
+  width: 320px; /*??? Очень не нравится такой класс, но не смог придумать, как перенести строку в нужном месте.*/
 }
 
 .reasons-list li {
@@ -163,7 +167,7 @@ ol li:first-child {
 
 .reasons-img {
   flex-grow: 2;
-  background-size: 800px 260px;/*??? задал размер "подложки" под картинку, но при проверке, при отключении картинки фон "схлопывается" ???*/
+  background-size: 800px 260px; /*??? задал размер "подложки" под картинку, но при проверке, при отключении картинки фон "схлопывается" ???*/
   background-color: #c4c4c4;
 }
 
@@ -201,18 +205,12 @@ ol li:first-child {
   font-weight: bold;
 }
 
-a.invitation-button {
+a.button-invitation {
   display: block;
   width: 567px;
   height: 87px;
   background-color: #766357;
   margin: auto;
-}
-
-.button {
-  font-size: 21px;
-  font-weight: bold;
-  color: #ffffff;
 }
 
 .sort-link {
@@ -272,7 +270,7 @@ a.invitation-button {
   width: 180px;
 }
 
-.social-button {
+.button-social {
   width: 50px;
   height: 50px;
   background-color: #81b3d2;
@@ -290,17 +288,18 @@ a.invitation-button {
   position: relative;
   top: 0px;
   left: 163px;
-  width: 72px;
+  width: 76px;
+  height: 76px;
 }
 
 .food:before {
   content: "";
-  background: url("../img/food-icon.svg") no-repeat;
+  background: url("../img/food-icon.png") no-repeat;
   display: block;
   position: relative;
   top: 0px;
-  left: 163px;
-  width: 72px;
+  left: 160px;
+  width: 76px;
   height: 76px;
 }
 
@@ -311,7 +310,7 @@ a.invitation-button {
   position: relative;
   top: 0px;
   left: 163px;
-  width: 72px;
+  width: 76px;
   height: 76px;
 }
 
@@ -358,6 +357,114 @@ a.invitation-button {
   height: 2px;
   background-color: #ffffff;
 }
+
+.filters-hotels-wrapper {
+  display: flex;
+  height: 217px;
+  background-color: #81b3d2;
+  background-image: url("../img/hotels-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+
+/*todo убрать временные рамки*/
+.filters-hotels-infrastructure {
+  width: 160px;
+  margin-left: 70px;
+  border: 1px solid red; /*временная рамка*/
+}
+
+.filters-hotels-housing {
+  width: 160px;
+  margin-left: 95px;
+  border: 1px solid red; /*временная рамка*/
+}
+
+.filters-hotels-cost {
+  width: 330px;
+  margin-left: 325px;
+  border: 1px solid red; /*временная рамка*/
+}
+
+.filters-hotels legend {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.sort-list {
+  display: flex;
+}
+
+.filters-result {
+  display: flex;
+}
+
+.result-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.result-item {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 150px;
+  flex-wrap: wrap;
+}
+
+.result-item img {
+  order: -1;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 73px;
+}
+
+.result-wrapper {
+  width: 280px;
+  margin-left: 30px;
+  text-align: left;
+}
+
+.result-wrapper h3 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.result-item p {
+  margin-bottom: 15px;
+}
+
+.button {
+  display: inline-block;
+  appearance: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.button:focus {
+  outline: none
+}
+
+.button-detailed {
+  width: 110px;
+  height: 27px;
+  background-color: #81b3d2;
+}
+
+.button-reservation {
+  width: 140px;
+  height: 27px;
+  background-color: #766357;
+}
+
+.rating {
+  margin-left: auto;
+}
+
 
 
 /*Пока не понимаю как задать нужные цвета иконке

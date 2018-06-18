@@ -31,7 +31,7 @@
     </div>
 
     <section class="reasons">
-      <div class="title">
+      <div class="reasons-title">
         <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p>Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
       </div>
@@ -41,7 +41,6 @@
           <div class="reasons-text">
             <h3>Настоящий городок</h3>
             <span class="numbers">1</span>
-            <!--todo "черточки" у порядковых номеров :after и :before в CSS-->
             <!--todo переносы строк делать при помощи width для h3, без <br>-->
             <p>Седона не атракцион для туристов, там течет своя жизнь</p>
           </div>
@@ -97,7 +96,7 @@
     <section class="invitation-header">
       <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <a class="button invitation-button" href="#">Поиск гостиницы в Седоне</a>
+      <a class="button button-invitation" href="#">Поиск гостиницы в Седоне</a>
     </section>
 
     <section class="invitation-body">
@@ -114,16 +113,16 @@
           <!--todo иконка календаря в CSS-->
 
           <label class="form-label" for="count-adult">Взрослые:</label>
-          <input type="button" value="-" onClick="change('amount',0,10,-1);"/>
+          <input type="button" value="-">
           <input class="form-input-count" type="text" name="count-adult" id="count-adult" value="2">
-          <input type="button" value="+" onClick="change('amount',0,10, 1);"/>
+          <input type="button" value="+">
 
           <label class="form-label" for="count-adult">Дети:</label>
           <input type="button" value="-">
           <input class="form-input-count" type="text" name="count-children" id="count-children" value="0">
           <input type="button" value="+">
 
-          <button class="button find-button" type="submit" value="Найти">Найти</button>
+          <button class="button-find" type="submit" value="Найти">Найти</button>
         </fieldset>
       </form>
     </section>
@@ -142,13 +141,13 @@
   <footer class="main-footer">
     <div class="footer-logo">#visitsedona</div>
     <ul class="footer-social">
-      <li><a class="social-button social-button-vk" href="#">ВК</a></li>
-      <li><a class="social-button social-button-fb" href="#">ФБ</a></li>
-      <li><a class="social-button social-button-in" href="#">ИН</a></li>
+      <li><a class="button button-social button-social-vk" href="#">ВК</a></li>
+      <li><a class="button button-social button-social-fb" href="#">ФБ</a></li>
+      <li><a class="button button-social button-social-in" href="#">ИН</a></li>
     </ul>
     <div class="footer-copyright">
       <span>website by</span>
-      <a class="button" href="https://htmlacademy.ru"><img src="img/logo_academy.png" class="logo-academy" alt="HTML Academy"></a>
+      <a class="button button-copyright" href="https://htmlacademy.ru"><img src="img/logo_academy.png" class="logo-academy" alt="HTML Academy"></a>
     </div>
   </footer>
 </div>
