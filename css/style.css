@@ -14,6 +14,8 @@ body {
 
 a {
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 fieldset {
@@ -274,7 +276,18 @@ a.button-invitation {
   width: 50px;
   height: 50px;
   background-color: #81b3d2;
-  margin: auto;
+}
+
+.button-social-vk {
+
+}
+
+.button-social-fb {
+
+}
+
+.button-social-inst {
+
 }
 
 .footer-copyright {
@@ -414,6 +427,8 @@ a.button-invitation {
   display: flex;
   height: 150px;
   flex-wrap: wrap;
+  border: 1px solid red; /*временная рамка*/
+  margin-bottom: -1px;  /*временный отступ*/
 }
 
 .result-item img {
@@ -431,18 +446,16 @@ a.button-invitation {
 
 .result-wrapper h3 {
   margin-top: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 
 .result-item p {
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 
 .button {
   display: inline-block;
-  appearance: none;
-  box-shadow: none;
-  border-radius: 0;
+  border: 0;
 }
 
 .button:focus {
@@ -463,9 +476,41 @@ a.button-invitation {
 
 .rating {
   margin-left: auto;
+  width: 110px;
+  height: 27px;
+  margin-top: 95px;
+  background-color: #f2f2f2;
 }
 
+.found {
+  margin-left: 73px;
+  margin-top: 30px;
+}
 
+.sort {
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.sort-list {
+  padding-left: 38px;
+  margin-top: 30px;
+}
+
+.sort-list li{
+  margin-right: 30px;
+}
+
+.rating::before {
+  content: "";
+  display: block;
+  position: relative;
+  background-color: #766357; /*временно, нужна звёздочка*/
+  width: 21px;
+  height: 21px;
+  top: 82px; /*временно*/
+  left: 31px; /*временно*/
+}
 
 /*Пока не понимаю как задать нужные цвета иконке
 .logo-academy {
