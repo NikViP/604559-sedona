@@ -253,44 +253,6 @@ a.button-invitation {
   color: rgba(0, 0, 0, 0.302);
 }
 
-.main-footer {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-logo {
-  width: 180px;
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.footer-social {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  justify-content: space-between;
-  width: 150px;
-}
-
-.button-social {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 46px;
-  height: 48px;
-  background-color: #81b3d2;
-}
-
-.button-social
-
-.footer-copyright {
-  width: 210px;
-}
-
 .housing:before {
   content: "";
   background: url("../img/housing-icon.svg") no-repeat;
@@ -500,30 +462,67 @@ a.button-invitation {
   margin-right: 30px;
 }
 
-/*.rating::before {
-  content: "";
-  display: block;
-  position: relative;
-  background-color: #766357; /*временно, нужна звёздочка*/
-  /*width: 21px;
-  height: 21px;
-  top: 82px; /*временно*/
-  /*left: 31px; /*временно*/
+.main-footer {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
-/*Пока не понимаю как задать нужные цвета иконкам
-.logo-academy {
-  background: rgb(0, 0, 0);
+.footer-logo {
+  width: 180px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
-.logo-academy:hover {
-  background: rgb(129, 179, 210);
+.footer-social {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  width: 150px;
 }
 
-.logo-academy:active {
-  background: rgba(0, 0, 0, 0.302);
+.button-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
 }
-*/
+
+.button-social:hover {
+  background-color: #669ec0;
+}
+
+.button-social:active path {
+  fill: #5496bd;
+  background-color: #88b6d1;
+}
+
+.footer-copyright {
+  width: 210px;
+}
+
+.footer-copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  height: 45px;
+}
+
+.footer-copyright a:hover path {
+  fill: rgb(129, 179, 210);
+}
+
+.footer-copyright a:active path {
+  fill: rgba(0, 0, 0, 0.302);
+}
+
 
 
 
