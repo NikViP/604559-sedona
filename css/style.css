@@ -269,26 +269,23 @@ a.button-invitation {
 }
 
 .footer-social {
-  width: 180px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  width: 150px;
 }
 
 .button-social {
-  width: 50px;
-  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
   background-color: #81b3d2;
 }
 
-.button-social-vk {
-
-}
-
-.button-social-fb {
-
-}
-
-.button-social-inst {
-
-}
+.button-social
 
 .footer-copyright {
   width: 210px;
@@ -307,7 +304,7 @@ a.button-invitation {
 
 .food:before {
   content: "";
-  background: url("../img/food-icon.png") no-repeat;
+  background: url("../img/food-icon.svg") no-repeat;
   display: block;
   position: relative;
   top: 0px;
@@ -456,6 +453,8 @@ a.button-invitation {
 .button {
   display: inline-block;
   border: 0;
+  line-height: 27px;
+  text-align: center;
 }
 
 .button:focus {
@@ -501,18 +500,18 @@ a.button-invitation {
   margin-right: 30px;
 }
 
-.rating::before {
+/*.rating::before {
   content: "";
   display: block;
   position: relative;
   background-color: #766357; /*временно, нужна звёздочка*/
-  width: 21px;
+  /*width: 21px;
   height: 21px;
   top: 82px; /*временно*/
-  left: 31px; /*временно*/
+  /*left: 31px; /*временно*/
 }
 
-/*Пока не понимаю как задать нужные цвета иконке
+/*Пока не понимаю как задать нужные цвета иконкам
 .logo-academy {
   background: rgb(0, 0, 0);
 }
@@ -525,7 +524,6 @@ a.button-invitation {
   background: rgba(0, 0, 0, 0.302);
 }
 */
-
 
 
 
