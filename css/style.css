@@ -386,6 +386,7 @@ a.button-invitation {
   display: flex;
   height: 150px;
   flex-wrap: wrap;
+  font-weight: normal;
   border: 1px solid red; /*временная рамка*/
   margin-bottom: -1px;  /*временный отступ*/
 }
@@ -409,14 +410,26 @@ a.button-invitation {
 }
 
 .result-item p {
-  margin-bottom: 8px;
+  margin-bottom: 13px;
+}
+
+.wrapper-buttons {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 258px;
+  justify-content: space-between;
 }
 
 .button {
   display: inline-block;
+  margin: 0;
+  padding: 0;
   border: 0;
-  line-height: 27px;
+  line-height: 28px;
   text-align: center;
+  color: #ffffff;
+  font-weight: bold;
 }
 
 .button:focus {
@@ -433,13 +446,15 @@ a.button-invitation {
   width: 140px;
   height: 27px;
   background-color: #766357;
+  font-family: "PT Sans", Arial sans-serif;
+  text-transform: uppercase;
 }
 
 .rating {
   margin-left: auto;
   width: 110px;
   height: 27px;
-  margin-top: 95px;
+  margin-top: 88px;
   background-color: #f2f2f2;
 }
 
