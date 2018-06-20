@@ -91,9 +91,18 @@ fieldset {
   list-style: none;
 }
 
-.navigation-link {
-  width: 100px;
-  height: 25px;
+.navigation-list li {
+  min-width: 100px;
+}
+
+.navigation-list li:first-child,
+.navigation-list li:nth-child(2) {
+  text-align: left;
+}
+
+.navigation-list li:last-child,
+.navigation-list li:nth-last-child(2) {
+  text-align: right;
 }
 
 .main-billboard {
@@ -388,7 +397,7 @@ a.button-invitation {
   flex-wrap: wrap;
   font-weight: normal;
   border: 1px solid red; /*временная рамка*/
-  margin-bottom: -1px;  /*временный отступ*/
+  margin-bottom: -1px; /*временный отступ*/
 }
 
 .result-item img {
@@ -473,7 +482,7 @@ a.button-invitation {
   margin-top: 30px;
 }
 
-.sort-list li{
+.sort-list li {
   margin-right: 30px;
 }
 
