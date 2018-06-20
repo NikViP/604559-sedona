@@ -44,7 +44,7 @@ fieldset {
   background-image: url(../img/main-banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 60px;
+  margin-bottom: 63px;
 }
 
 .navigation {
@@ -129,12 +129,23 @@ fieldset {
   display: flex;
 }
 
+.main-billboard:after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/origami.png");
+  width: 1200px;
+  height: 57px;
+  z-index: 1;
+  top: 453px;
+}
+
 .group-inscriptions {
   margin: auto;
+  margin-top: 76px;
 }
 
 .reasons-title {
-  margin-bottom: 60px;
+  margin-bottom: 56px;
   padding: 0;
 }
 
@@ -143,7 +154,7 @@ fieldset {
 }
 
 .reasons-title h2 {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 ol li:first-child {
@@ -161,6 +172,10 @@ ol li:first-child {
   font-weight: bold;
 }
 
+.reasons-list {
+  background-color: #eeeeee;
+}
+
 .reasons-list p {
   width: 260px;
 }
@@ -170,7 +185,7 @@ ol li:first-child {
 }
 
 .reasons-list li {
-  height: 260px;
+  height: 256px;
 }
 
 .reasons-list {
@@ -184,16 +199,33 @@ ol li:first-child {
 .reasons-item-banner {
   display: flex;
   color: #ffffff;
+  margin-bottom: 40px;
 }
 
 .reasons-item-banner.reverse {
   flex-direction: row-reverse;
+  margin-top: 40px;
+  margin-bottom: 27px;
+}
+
+.reasons-item h3 {
+  width: 160px;
+  margin: 0 auto;
+  margin-top: 21px;
+  margin-bottom: 23px;
 }
 
 .reasons-text {
   flex-grow: 1;
   width: 400px; /*??? вынужденно задал эту ширину потому, что при задании ширины абзацам ".reasons-list p" почему-то сужался и этот элемент тоже ???*/
   background-color: #81b3d2;
+}
+
+.reasons-text h3 {
+  width: 180px;
+  margin: 0 auto;
+  margin-top: 48px;
+  margin-bottom: 23px;
 }
 
 .reasons-img {
@@ -209,6 +241,7 @@ ol li:first-child {
 .recommendation-list {
   margin: 0;
   padding: 0;
+  height: 330px;
   display: flex;
   justify-content: space-between;
 }
@@ -282,6 +315,10 @@ a.button-invitation {
   color: rgba(0, 0, 0, 0.302);
 }
 
+.housing {
+  margin-bottom: 26px;
+}
+
 .housing:before {
   content: "";
   background: url("../img/housing-icon.svg") no-repeat;
@@ -291,6 +328,7 @@ a.button-invitation {
   left: 163px;
   width: 76px;
   height: 76px;
+  margin-bottom: 26px;
 }
 
 .food:before {
@@ -315,12 +353,17 @@ a.button-invitation {
   height: 76px;
 }
 
+.number {
+  display: block;
+  margin-bottom: 20px;
+}
+
 .number::before {
   content: "";
   display: block;
   position: relative;
   top: 12px;
-  left: 181px;
+  left: 174px;
   width: 9px;
   height: 2px;
   background-color: #333333;
@@ -331,10 +374,15 @@ a.button-invitation {
   display: block;
   position: relative;
   top: -11px;
-  left: 210px;
+  left: 217px;
   width: 9px;
   height: 2px;
   background-color: #333333;
+}
+
+.numbers {
+  display: block;
+  margin-bottom: 20px;
 }
 
 .numbers::before {
@@ -342,7 +390,7 @@ a.button-invitation {
   display: block;
   position: relative;
   top: 12px;
-  left: 181px;
+  left: 174px;
   width: 9px;
   height: 2px;
   background-color: #ffffff;
@@ -353,7 +401,7 @@ a.button-invitation {
   display: block;
   position: relative;
   top: -11px;
-  left: 210px;
+  left: 217px;
   width: 9px;
   height: 2px;
   background-color: #ffffff;
