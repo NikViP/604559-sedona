@@ -96,15 +96,7 @@ fieldset {
   min-width: 100px;
   padding: 0 73px;
 }
-/*
-.navigation-list li:first-child {
-  padding-left: 73px;
-}
 
-.navigation-list li:last-child {
-  padding-right: 73px;
-}
-*/
 .navigation-list li:first-child,
 .navigation-list li:nth-child(2) {
   text-align: left;
@@ -407,9 +399,16 @@ a.button-invitation {
   background-color: #ffffff;
 }
 
+
+
+/*Стили для списков инфраструктура и тип жилья=================================================================*/
+
 .filters-hotels-wrapper {
   display: flex;
-  height: 362px;
+  margin: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  height: 217px;
   background-color: #81b3d2;
   background-image: url("../img/hotels-banner.jpg");
   background-repeat: no-repeat;
@@ -417,20 +416,29 @@ a.button-invitation {
   color: #ffffff;
 }
 
+.filter-list {
+  margin: 0;
+  padding: 0;
+}
+
 .filters-hotels-infrastructure {
-  width: 160px;
-  margin-left: 70px;
+  display: block;
+  width: 150px;
+  margin-left: 73px;
+  text-align: left;
   border: 1px solid red; /*временная рамка*/
 }
 
 .filters-hotels-housing {
-  width: 160px;
-  margin-left: 95px;
+  display: block;
+  width: 150px;
+  margin-left: 105px;
+  text-align: left;
   border: 1px solid red; /*временная рамка*/
 }
 
-.filters-hotels-cost {
-  width: 330px;
+.filters-hotels-range{
+  width: 320px;
   margin-left: 325px;
   border: 1px solid red; /*временная рамка*/
 }
@@ -553,72 +561,15 @@ a.button-invitation {
   margin-right: 30px;
 }
 
-.main-footer {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-}
+/*Стили для списков инфраструктура и тип жилья END=================================================================*/
 
-.footer-logo {
-  width: 180px;
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
+/*Стили "Стоимость в сутки"========================================*/
 
-.footer-social {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  justify-content: space-between;
-  width: 150px;
-}
-
-.button-social {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 46px;
-  height: 48px;
-  background-color: #81b3d2;
-}
-
-.button-social:hover {
-  background-color: #669ec0;
-}
-
-.button-social:active path {
-  fill: #5496bd;
-  background-color: #88b6d1;
-}
-
-.footer-copyright {
-  width: 210px;
-}
-
-.footer-copyright {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 200px;
-  height: 45px;
-}
-
-.footer-copyright a:hover path {
-  fill: rgb(129, 179, 210);
-}
-
-.footer-copyright a:active path {
-  fill: rgba(0, 0, 0, 0.302);
-}
-
-/*Стили для hotels.html*/
-
-.filter-range {
+.filters-hotels-range {
+  display: block;
   width: 330px;
-  margin: 50px auto; /* для демо */
+  margin-left: auto;
+  margin-right: 73px;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -734,6 +685,69 @@ a.button-invitation {
 .btn-transparent:hover {
   color: #000000;
   background: #ffffff;
+}
+
+/*Стили "Стоимость в сутки" END=====================================*/
+
+.main-footer {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  width: 180px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footer-social {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  width: 150px;
+}
+
+.button-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+}
+
+.button-social:hover {
+  background-color: #669ec0;
+}
+
+.button-social:active path {
+  fill: #5496bd;
+  background-color: #88b6d1;
+}
+
+.footer-copyright {
+  width: 210px;
+}
+
+.footer-copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  height: 45px;
+}
+
+.footer-copyright a:hover path {
+  fill: rgb(129, 179, 210);
+}
+
+.footer-copyright a:active path {
+  fill: rgba(0, 0, 0, 0.302);
 }
 
 
