@@ -107,14 +107,18 @@ fieldset {
   text-align: right;
 }
 
-.navigation-list:before {
+.logo-up {
   position: absolute;
-  content: "";
-  background-image: url("../img/logo-up.png");
   width: 138px;
   height: 70px;
   z-index: 1;
-  left: 531px;
+  top: 0;
+  left: 50%;
+  margin-left: -69px;
+}
+
+.inner-page .logo-up:active {
+
 }
 
 .main-billboard {
