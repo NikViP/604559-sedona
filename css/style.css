@@ -222,7 +222,7 @@ ol li:first-child {
 
 .reasons-img {
   flex-grow: 2;
-  background-size: 800px 260px; /*??? задал размер "подложки" под картинку, но при проверке, при отключении картинки фон "схлопывается" ???*/
+  background-size: 800px 256px; /*??? задал размер "подложки" под картинку, но при проверке, при отключении картинки фон "схлопывается" ???*/
   background-color: #c4c4c4;
 }
 
@@ -399,15 +399,12 @@ a.button-invitation {
   background-color: #ffffff;
 }
 
-
-
 /*Стили для списков инфраструктура и тип жилья=================================================================*/
+
 
 .filters-hotels-wrapper {
   display: flex;
-  margin: 0;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  margin-top: 0;
   height: 217px;
   background-color: #81b3d2;
   background-image: url("../img/hotels-banner.jpg");
@@ -424,29 +421,67 @@ a.button-invitation {
 .filters-hotels-infrastructure {
   display: block;
   width: 150px;
+  margin-top: 32px;
   margin-left: 73px;
+  padding: 0;
   text-align: left;
-  border: 1px solid red; /*временная рамка*/
 }
 
 .filters-hotels-housing {
   display: block;
   width: 150px;
+  margin-top: 32px;
   margin-left: 105px;
+  padding: 0;
   text-align: left;
-  border: 1px solid red; /*временная рамка*/
 }
 
-.filters-hotels-range{
+.filters-hotels-range {
   width: 320px;
+  margin-top: 32px;
   margin-left: 325px;
-  border: 1px solid red; /*временная рамка*/
 }
 
 .filters-hotels legend {
   font-size: 16px;
   line-height: 21px;
   font-weight: bold;
+}
+
+.filter-option {
+  margin-bottom: 22px;
+}
+
+.filter-option:first-child {
+  margin-top: 25px;
+}
+
+.form-label {
+  position: relative;
+  padding-left: 30px;
+}
+
+.form-label .checkbox-checking {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.form-label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  height: 8px;
+  width: 14px;
+  border-left: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  transform: rotate(-45deg);
 }
 
 .sort-list {
