@@ -381,13 +381,18 @@ a.button-invitation {
   position: absolute;
   right: 9px;
   top: 8px;
+  color: red;
+}
+
+.icon-calendar-svg {
+  fill: currentcolor;
 }
 
 .icon-calendar:hover {
 
 }
 
-.icon-calendar:active path {
+.icon-calendar:active {
 
 }
 
@@ -395,7 +400,12 @@ a.button-invitation {
   background-color: crimson;
 }
 
-
+.icon-plus {
+  font-size: 24px;
+  font-weight: 700;
+  width: 38px;
+  line-height: 38px;
+}
 /*.icon-plus::before {
   content: '\e801';
 }
