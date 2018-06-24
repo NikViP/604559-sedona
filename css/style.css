@@ -162,7 +162,6 @@ ol li:first-child {
 }
 
 .reasons h3 {
-  /*width: 160px;/*??? При задании принудительной ширины для получения правильных переносов текст сдвигается влево и не желает быть по центру*/
   text-align: center;
   font-size: 21px;
   font-weight: bold;
@@ -172,12 +171,12 @@ ol li:first-child {
   background-color: #eeeeee;
 }
 
-.reasons-list p {
-  width: 260px;
+.reasons-item-banner p {
+  width: 310px;
 }
 
-.reasons-list .long-p {
-  width: 320px; /*??? Очень не нравится такой класс, но не смог придумать, как перенести строку в нужном месте.*/
+.reasons-item p {
+  width: 280px;
 }
 
 .reasons-list li {
@@ -246,32 +245,194 @@ ol li:first-child {
   width: 290px;
 }
 
-.recommendation-list li {
-  height: 330px; /*??? размер переопределён, но блок "залазит" под следующий, а не отталкивает его ???*/
-}
-
 .reasons-item,
 .recommendation-item {
   width: 400px;
 }
 
+.invitation {
+  position: relative;
+}
+
 .invitation-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 1200px;
   height: 290px;
 }
 
 .invitation-header h2 {
+  margin: 0;
+  margin-top: 62px;
   font-size: 30px;
   font-weight: bold;
 }
 
+.invitation-header p {
+  width: 440px;
+  align-self: center;
+  line-height: 24px;
+}
+
 a.button-invitation {
-  display: block;
-  width: 567px;
+  align-self: center;
+  width: 570px;
   height: 87px;
   background-color: #766357;
-  margin: auto;
+  font-size: 21px;
+  margin-top: 20px;
+  vertical-align: middle;
+  line-height: 89px;
 }
+
+/*==Модальное окно==*/
+
+.invitation-modal {
+  position: absolute;
+  top: 290px;
+  left: 50%;
+  margin-left: -285px;
+  width: 570px;
+  min-height: 395px;
+  background: #ffffff;
+  color: #000000;
+}
+
+.invitation-form {
+  margin: 55px;
+  display: flex;
+  flex-direction: column;
+  width: 458px;
+  height: 295px;
+  font-weight: bold;
+}
+
+.form-date {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+
+  border: none;
+
+  font-size: 0;
+
+  font-weight: bold;
+
+  text-align: left;
+}
+.invitation-form .form-label {
+  display: inline-block;
+  vertical-align: top;
+
+  width: 115px;
+
+  font-size: 14px;
+  line-height: 41px;
+}
+
+.invitation-form .form-input {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.form-input-date {
+  width: 343px;
+  padding-right: 38px;
+}
+
+.icon-calendar {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  color: #a9a9a9;
+}
+.icon-calendar::before {
+  width: 38px;
+  margin: 0;
+
+  font-size: 21px;
+  line-height: 38px;
+
+  text-align: center;
+}
+
+.form-input-date:hover + .icon-calendar {
+  color: #000;
+}
+
+.form-input-date:focus + .icon-calendar {
+  color: #81b3d2;
+}
+
+.counter {
+  display: inline-block;
+  vertical-align: top;
+
+  margin: 0;
+  padding: 0;
+
+  border: none;
+
+  font-size: 0px;
+}
+.form-input-counter {
+  width: 38px;
+
+  padding: 8px 0;
+
+  text-align: center;
+}
+
+.counter button {
+  display: inline-block;
+  vertical-align: top;
+
+  padding: 0;
+
+  border: none;
+  outline: none;
+
+  color: #a9a9a9;
+  background: #f2f2f2;
+}
+.counter button::before {
+  display: block;
+
+  width: 38px;
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 38px;
+
+  text-align: center;
+}
+
+.counter .form-label[for='counter-children'] {
+  width: 65px;
+  margin-left: 50px;
+}
+
+.invitation-form .btn {
+  width: 100%;
+
+  margin-top: 24px;
+  padding: 16px;
+
+  font-size: 21px;
+  line-height: 26px;
+}
+
+
+
+
+
+/*==END Модальное окно==*/
+
+
 
 .sort-link {
   font-size: 12px;
@@ -311,42 +472,29 @@ a.button-invitation {
   color: rgba(0, 0, 0, 0.302);
 }
 
-.housing {
+.housing:before,
+.food:before,
+.gifts:before {
+  content: "";
+  display: block;
+  position: relative;
+  top: 0px;
+  left: 163px;
+  width: 76px;
+  height: 76px;
   margin-bottom: 26px;
 }
 
 .housing:before {
-  content: "";
   background: url("../img/housing-icon.svg") no-repeat;
-  display: block;
-  position: relative;
-  top: 0px;
-  left: 163px;
-  width: 76px;
-  height: 76px;
-  margin-bottom: 26px;
 }
 
 .food:before {
-  content: "";
   background: url("../img/food-icon.svg") no-repeat;
-  display: block;
-  position: relative;
-  top: 0px;
-  left: 160px;
-  width: 76px;
-  height: 76px;
 }
 
 .gifts:before {
-  content: "";
   background: url("../img/gift-icon.svg") no-repeat;
-  display: block;
-  position: relative;
-  top: 0px;
-  left: 163px;
-  width: 76px;
-  height: 76px;
 }
 
 .number {
@@ -403,8 +551,7 @@ a.button-invitation {
   background-color: #ffffff;
 }
 
-/*Стили для списков инфраструктура и тип жилья=================================================================*/
-
+/*==Списки инфраструктура и тип жилья==*/
 
 .filters-hotels-wrapper {
   display: flex;
@@ -565,6 +712,7 @@ input[type="checkbox"]:checked + .form-label::after {
   margin: 0;
   padding: 0;
   border: 0;
+  font-size: 14px;
   line-height: 28px;
   text-align: center;
   color: #ffffff;
@@ -616,9 +764,9 @@ input[type="checkbox"]:checked + .form-label::after {
   margin-right: 30px;
 }
 
-/*Стили для списков инфраструктура и тип жилья END=================================================================*/
+/*==END Списки==*/
 
-/*Стили "Стоимость в сутки"========================================*/
+/*==Стоимость в сутки==*/
 
 .filters-hotels-range {
   display: block;
@@ -742,7 +890,13 @@ input[type="checkbox"]:checked + .form-label::after {
   background: #ffffff;
 }
 
-/*Стили "Стоимость в сутки" END=====================================*/
+/*==END Стоимость в сутки==*/
+
+/*==Футер==*/
+
+iframe {
+  border: 0px;
+}
 
 .main-footer {
   margin: 0;
