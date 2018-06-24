@@ -300,6 +300,8 @@ a.button-invitation {
 }
 
 .invitation-form {
+  margin: 0;
+  padding: 0;
   margin: 55px;
   display: flex;
   flex-direction: column;
@@ -323,14 +325,17 @@ a.button-invitation {
 
   text-align: left;
 }
+
 .invitation-form .form-label {
+
   display: inline-block;
   vertical-align: top;
 
   width: 115px;
-
+  padding: 0;
   font-size: 14px;
-  line-height: 41px;
+  line-height: 38px;
+  font-weight: bold;
 }
 
 .invitation-form .form-input {
@@ -343,22 +348,71 @@ a.button-invitation {
   padding-right: 38px;
 }
 
-.icon-calendar {
+.form-input {
+  box-sizing: border-box;
+
+  padding: 8px;
+
+  border: 2px solid #f2f2f2;
+  outline: none;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+
+  font-family: 'PT Sans', Arial, sans-serif;
+
+  text-transform: uppercase;
+
+  background: #f2f2f2;
+}
+
+.form-input:hover {
+  border-color: #ebebeb;
+  background: #ebebeb;
+}
+
+.form-input:focus {
+  border-color: #e5e5e5;
+  background: #fff;
+}
+
+.icon-calendar{
   position: absolute;
-  right: 0;
-  top: 0;
-
-  color: #a9a9a9;
+  right: 9px;
+  top: 8px;
 }
-.icon-calendar::before {
-  width: 38px;
-  margin: 0;
 
-  font-size: 21px;
-  line-height: 38px;
+.icon-calendar:hover {
 
-  text-align: center;
 }
+
+.icon-calendar:active path {
+
+}
+
+.icon-plus:hover {
+  background-color: crimson;
+}
+
+
+/*.icon-plus::before {
+  content: '\e801';
+}
+
+.button-social:active path,
+.button-find:active,
+.button-detailed:active {
+  fill: #5496bd;
+  background-color: #88b6d1;
+  color: #5496bd;
+}
+
+
+
+.icon-minus::before {
+  content: '\e802';
+}*/
 
 .form-input-date:hover + .icon-calendar {
   color: #000;
@@ -379,6 +433,7 @@ a.button-invitation {
 
   font-size: 0px;
 }
+
 .form-input-counter {
   width: 38px;
 
@@ -399,6 +454,7 @@ a.button-invitation {
   color: #a9a9a9;
   background: #f2f2f2;
 }
+
 .counter button::before {
   display: block;
 
@@ -416,23 +472,17 @@ a.button-invitation {
   margin-left: 50px;
 }
 
-.invitation-form .btn {
-  width: 100%;
-
-  margin-top: 24px;
+.invitation-form .button-find {
+  width: 458px;
+  height: 58px;
+  margin-top: 27px;
   padding: 16px;
-
   font-size: 21px;
   line-height: 26px;
+  background-color: #81b3d2;
 }
 
-
-
-
-
 /*==END Модальное окно==*/
-
-
 
 .sort-link {
   font-size: 12px;
@@ -709,12 +759,11 @@ input[type="checkbox"]:checked + .form-label::after {
 
 .button {
   display: inline-block;
-  margin: 0;
-  padding: 0;
   border: 0;
   font-size: 14px;
   line-height: 28px;
   text-align: center;
+  text-transform: uppercase;
   color: #ffffff;
   font-weight: bold;
 }
@@ -734,7 +783,6 @@ input[type="checkbox"]:checked + .form-label::after {
   height: 27px;
   background-color: #766357;
   font-family: "PT Sans", Arial sans-serif;
-  text-transform: uppercase;
 }
 
 .rating {
@@ -930,13 +978,18 @@ iframe {
   background-color: #81b3d2;
 }
 
-.button-social:hover {
+.button-social:hover,
+.button-find:hover,
+.button-detailed:hover {
   background-color: #669ec0;
 }
 
-.button-social:active path {
+.button-social:active path,
+.button-find:active,
+.button-detailed:active {
   fill: #5496bd;
   background-color: #88b6d1;
+  color: #5496bd;
 }
 
 .footer-copyright {
