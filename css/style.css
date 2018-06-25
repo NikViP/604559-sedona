@@ -180,7 +180,7 @@ ol li:first-child {
 }
 
 .reasons-list li {
-  height: 256px;
+  min-height: 256px;
 }
 
 .reasons-list {
@@ -225,7 +225,7 @@ ol li:first-child {
 
 .reasons-img {
   flex-grow: 2;
-  background-size: 800px 256px; /*??? задал размер "подложки" под картинку, но при проверке, при отключении картинки фон "схлопывается" ???*/
+  background-size: 800px 256px;
   background-color: #c4c4c4;
 }
 
@@ -236,7 +236,7 @@ ol li:first-child {
 .recommendation-list {
   margin: 0;
   padding: 0;
-  height: 330px;
+  min-height: 330px;
   display: flex;
   justify-content: space-between;
 }
@@ -259,7 +259,7 @@ ol li:first-child {
   flex-direction: column;
   justify-content: space-between;
   width: 1200px;
-  height: 290px;
+  min-height: 290px;
 }
 
 .invitation-header h2 {
@@ -306,7 +306,7 @@ a.button-invitation {
   display: flex;
   flex-direction: column;
   width: 458px;
-  height: 295px;
+  min-height: 295px;
   font-weight: bold;
 }
 
@@ -384,7 +384,8 @@ a.button-invitation {
   color: rgba(0, 0, 0, 0.302);
 }
 
-.icon-calendar-svg {
+.icon-calendar-svg,
+.icon-sorting-svg {
   fill: currentcolor;
 }
 
@@ -590,7 +591,7 @@ a.button-invitation {
 .filters-hotels-wrapper {
   display: flex;
   margin-top: 0;
-  height: 217px;
+  min-height: 217px;
   background-color: #81b3d2;
   background-image: url("../img/hotels-banner.jpg");
   background-repeat: no-repeat;
@@ -691,6 +692,37 @@ input[type="checkbox"]:checked + .form-label::after {
 
 .filters-result {
   display: flex;
+  min-height: 86px;
+  position: relative;
+}
+
+.sorting {
+  position: absolute;
+  width: 11px;
+  height: 10px;
+  font-size: 0;
+}
+
+.sort-up {
+  top: 39px;
+  left: 1092px;
+}
+
+.sort-down {
+  top: 39px;
+  left: 1114px;
+}
+
+.icon-sorting-svg {
+  color: rgba(0, 0, 0, 0.302);
+}
+
+.icon-sorting-svg:hover {
+  color: rgb(0, 0, 0);
+}
+
+.icon-sorting-svg:active {
+  color: rgb(129, 179, 210);
 }
 
 .result-list {
@@ -704,11 +736,15 @@ input[type="checkbox"]:checked + .form-label::after {
   margin: 0;
   padding: 0;
   display: flex;
-  height: 150px;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  min-height: 150px;
   font-weight: normal;
-  border: 1px solid red; /*временная рамка*/
-  margin-bottom: -1px; /*временный отступ*/
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.result-item:first-child {
+  border-top: 1px solid #e5e5e5;
 }
 
 .result-item img {
@@ -719,7 +755,7 @@ input[type="checkbox"]:checked + .form-label::after {
 }
 
 .result-wrapper {
-  width: 280px;
+  width: 270px;
   margin-left: 30px;
   text-align: left;
 }
@@ -769,11 +805,39 @@ input[type="checkbox"]:checked + .form-label::after {
   font-family: "PT Sans", Arial sans-serif;
 }
 
+.button-reservation:hover,
+.button-invitation:hover {
+  background-color: #604e43;
+}
+
+.button-reservation:active,
+.button-invitation:active {
+  color: #928a85;
+  background-color: #503e33;
+}
+
 .rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   margin-left: auto;
+  margin-right: 73px;
+}
+
+.rating img {
+  margin: 0;
+  width: 18px;
+  height: 17px;
+}
+
+.rating-stars {
+  align-self: flex-end;
+}
+
+.rating-volume {
   width: 110px;
   height: 27px;
-  margin-top: 88px;
+  padding-top: 5px;
   background-color: #f2f2f2;
 }
 
@@ -818,7 +882,7 @@ input[type="checkbox"]:checked + .form-label::after {
 
 .price-controls {
   position: relative;
-  height: 36px;
+  min-height: 36px;
   margin-bottom: 20px;
   font-size: 0;
   border: 2px solid #ffffff;
