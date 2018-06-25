@@ -208,7 +208,7 @@ ol li:first-child {
 
 .reasons-text {
   flex-grow: 1;
-  width: 400px; /*??? вынужденно задал эту ширину потому, что при задании ширины абзацам ".reasons-list p" почему-то сужался и этот элемент тоже ???*/
+  width: 400px;
   background-color: #81b3d2;
 }
 
@@ -541,7 +541,7 @@ a.button-invitation {
 
 .numbers::after {
   content: "";
-  display: inline-block;
+  display: block;
   position: relative;
   top: -11px;
   left: 217px;
