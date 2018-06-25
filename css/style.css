@@ -50,7 +50,7 @@ fieldset {
 .navigation {
   font-size: 14px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .navigation-list,
@@ -117,10 +117,6 @@ fieldset {
   margin-left: -69px;
 }
 
-.inner-page .logo-up:active {
-
-}
-
 .main-billboard {
   display: flex;
 }
@@ -164,7 +160,7 @@ ol li:first-child {
 .reasons h3 {
   text-align: center;
   font-size: 21px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .reasons-list {
@@ -266,7 +262,7 @@ ol li:first-child {
   margin: 0;
   margin-top: 62px;
   font-size: 30px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .invitation-header p {
@@ -307,40 +303,28 @@ a.button-invitation {
   flex-direction: column;
   width: 458px;
   min-height: 295px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .form-date {
   position: relative;
-
   margin: 0;
-  margin-bottom: 30px;
   padding: 0;
-
+  margin-bottom: 30px;
   border: none;
-
   font-size: 0;
-
-  font-weight: bold;
-
+  font-weight: 700;
   text-align: left;
 }
 
 .invitation-form .form-label {
-
+  padding: 0;
   display: inline-block;
   vertical-align: top;
-
   width: 115px;
-  padding: 0;
   font-size: 14px;
   line-height: 38px;
-  font-weight: bold;
-}
-
-.invitation-form .form-input {
-  display: inline-block;
-  vertical-align: top;
+  font-weight: 700;
 }
 
 .form-input-date {
@@ -350,20 +334,12 @@ a.button-invitation {
 
 .form-input {
   box-sizing: border-box;
-
   padding: 8px;
-
   border: 2px solid #f2f2f2;
-  outline: none;
-
   font-size: 14px;
   line-height: 18px;
-  font-weight: bold;
-
-  font-family: 'PT Sans', Arial, sans-serif;
-
+  font-weight: 700;
   text-transform: uppercase;
-
   background: #f2f2f2;
 }
 
@@ -440,18 +416,6 @@ a.button-invitation {
   background: #f2f2f2;
 }
 
-.counter button::before {
-  display: block;
-
-  width: 38px;
-  margin: 0;
-
-  font-size: 14px;
-  line-height: 38px;
-
-  text-align: center;
-}
-
 .counter .form-label[for='counter-children'] {
   width: 65px;
   margin-left: 50px;
@@ -495,7 +459,7 @@ a.button-invitation {
   font-size: 21px;
   line-height: 26px;
   color: rgb(0, 0, 0);
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -631,7 +595,7 @@ a.button-invitation {
 .filters-hotels legend {
   font-size: 16px;
   line-height: 21px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .filter-option {
@@ -781,11 +745,11 @@ input[type="checkbox"]:checked + .form-label::after {
   display: inline-block;
   border: 0;
   font-size: 14px;
-  line-height: 28px;
+  line-height: 27px;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .button:focus {
@@ -998,16 +962,17 @@ iframe {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   min-height: 120px;
 }
 
 .footer-logo {
-  width: 180px;
+  /*width: 180px;*/
+  margin-left: 132px;
   font-size: 21px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -1015,6 +980,7 @@ iframe {
   display: flex;
   margin: 0;
   padding: 0;
+  margin-left: 256px;
   justify-content: space-between;
   width: 150px;
 }
@@ -1044,6 +1010,8 @@ iframe {
 
 .footer-copyright {
   width: 210px;
+  margin-left: auto;
+  margin-right: 100px;
 }
 
 .footer-copyright {
