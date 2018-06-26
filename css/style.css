@@ -37,16 +37,6 @@ fieldset {
   box-shadow: 0 -10px 20px 10px #b8b8b8;
 }
 
-.main-billboard {
-  position: relative;
-  height: 510px;
-  background-color: #81b3d2;
-  background-image: url(../img/main-banner.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 63px;
-}
-
 .navigation {
   font-size: 14px;
   line-height: 26px;
@@ -89,6 +79,7 @@ fieldset {
   margin: 0;
   padding: 0;
   min-height: 56px;
+  height: 56px; /*для центрирования в IE по вертикали*/
   list-style: none;
 }
 
@@ -119,6 +110,11 @@ fieldset {
 
 .main-billboard {
   display: flex;
+  position: relative;
+  height: 509px;
+  background-color: #81b3d2;
+  background-image: url(../img/main-banner.jpg);
+  margin-bottom: 63px;
 }
 
 .main-billboard:after {
@@ -128,7 +124,8 @@ fieldset {
   width: 1200px;
   height: 57px;
   z-index: 1;
-  top: 453px;
+  top: 452px;
+  left: 0;
 }
 
 .group-inscriptions {
@@ -176,7 +173,7 @@ ol li:first-child {
 }
 
 .reasons-list li {
-  min-height: 256px;
+  height: 256px;
 }
 
 .reasons-list {
@@ -558,8 +555,7 @@ a.button-invitation {
   min-height: 217px;
   background-color: #81b3d2;
   background-image: url("../img/hotels-banner.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 100%;
   color: #ffffff;
 }
 
@@ -875,12 +871,15 @@ input[type="checkbox"]:checked + .form-label::after {
 .price-controls .min-price,
 .price-controls .max-price {
   width: 90px;
+  height: 15px;
   padding-left: 65px;
 }
 
 .price-controls input {
   width: 50px;
   margin: 0;
+  padding: 0; /*для верного отображения в IE*/
+  padding-bottom: 7px; /*для верного отображения в IE*/
   color: inherit;
   font: inherit;
   background: none;
@@ -931,7 +930,7 @@ input[type="checkbox"]:checked + .form-label::after {
   left: 80%;
 }
 
-.btn-transparent {
+.button-transparent {
   display: block;
   margin: 0 auto;
   padding: 6px 35px;
@@ -945,12 +944,15 @@ input[type="checkbox"]:checked + .form-label::after {
   cursor: pointer;
 }
 
-.btn-transparent:hover {
+.button-transparent:hover {
   color: #000000;
   background: #ffffff;
 }
-
 /*==END Стоимость в сутки==*/
+
+.map {
+  background-image: url("../img/map.jpg");
+}
 
 /*==Футер==*/
 
@@ -965,6 +967,7 @@ iframe {
   justify-content: flex-start;
   align-items: center;
   min-height: 120px;
+  height: 120px; /*для центрирования в IE по вертикали*/
 }
 
 .footer-logo {
