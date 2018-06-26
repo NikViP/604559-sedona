@@ -43,6 +43,11 @@ fieldset {
   font-weight: 700;
 }
 
+.wrapper-navigation {
+  width: 1054px;
+  margin: 0 73px;
+}
+
 .navigation-list,
 .reasons-list,
 .reasons-list,
@@ -85,7 +90,6 @@ fieldset {
 
 .navigation-list li {
   min-width: 100px;
-  padding: 0 73px;
 }
 
 .navigation-list li:first-child,
@@ -187,12 +191,12 @@ ol li:first-child {
 .reasons-item-banner {
   display: flex;
   color: #ffffff;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
 
 .reasons-item-banner.reverse {
   flex-direction: row-reverse;
-  margin-top: 40px;
+  margin-top: 36px;
   margin-bottom: 27px;
 }
 
@@ -212,7 +216,7 @@ ol li:first-child {
 .reasons-text h3 {
   width: 180px;
   margin: 0 auto;
-  margin-top: 48px;
+  margin-top: 45px;
   margin-bottom: 23px;
 }
 
@@ -229,7 +233,7 @@ ol li:first-child {
 .recommendation-list {
   margin: 0;
   padding: 0;
-  min-height: 330px;
+  height: 330px;
   display: flex;
   justify-content: space-between;
 }
@@ -522,7 +526,7 @@ a.button-invitation {
 
 .numbers {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .numbers::before {
