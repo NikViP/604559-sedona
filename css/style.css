@@ -54,7 +54,7 @@ fieldset {
 .footer-social,
 .recommendation-list,
 .filter-list,
-.filters-sort-list,
+.sort-list,
 .result-list {
   list-style: none;
 }
@@ -262,7 +262,7 @@ ol li:first-child {
 
 .invitation-header h2 {
   margin: 0;
-  margin-top: 60px;
+  margin-top: 55px;
   margin-bottom: 5px;
   font-size: 30px;
   font-weight: 700;
@@ -424,24 +424,28 @@ ol li:first-child {
 
 /*==END Модальное окно==*/
 
-.filters-sort-link {
+.sort-link {
   font-size: 12px;
   line-height: 18px;
   color: rgba(0, 0, 0, 0.302);
   border-bottom: 1px dotted #81b3d2;
 }
 
-.filters-sort-link:hover {
+.sort-link:hover {
   color: rgb(129, 179, 210);
   border-bottom: 1px dotted #81b3d2;
 }
 
+<<<<<<< HEAD
 .filters-sort-link:focus {
+=======
+.sort-link:active {
+>>>>>>> parent of cef24e2... Pixel Perfect выполнено.
   color: rgb(0, 0, 0);
   border-bottom: none;
 }
 
-.filters-sort-link-active {
+.sort-link-active {
   color: rgb(129, 179, 210);
   border-bottom: none;
 }
@@ -560,7 +564,7 @@ ol li:first-child {
 .filters-hotels-infrastructure {
   display: block;
   width: 150px;
-  margin-top: 28px;
+  margin-top: 32px;
   margin-left: 73px;
   padding: 0;
   text-align: left;
@@ -569,12 +573,21 @@ ol li:first-child {
 .filters-hotels-housing {
   display: block;
   width: 150px;
-  margin-top: 27px;
-  margin-left: 103px;
+  margin-top: 32px;
+  margin-left: 105px;
   padding: 0;
   text-align: left;
 }
 
+<<<<<<< HEAD
+=======
+.filters-hotels-range {
+  width: 320px;
+  margin-top: 32px;
+  margin-left: 325px;
+}
+
+>>>>>>> parent of cef24e2... Pixel Perfect выполнено.
 .filters-hotels legend {
   font-size: 16px;
   line-height: 21px;
@@ -592,10 +605,6 @@ ol li:first-child {
 .form-label {
   position: relative;
   padding-left: 30px;
-}
-
-.checkbox-checking {
-  margin-left: 10px;
 }
 
 .checkbox-checking:before {
@@ -655,18 +664,6 @@ input[type="checkbox"]:focus + .form-label {
   position: relative;
 }
 
-.filters-result h3 {
-  font-size: 21px;
-  line-height: 26px;
-}
-
-.filters-result h3.filters-sort {
-  padding-top: 5px;
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: 400;
-}
-
 .sorting {
   position: absolute;
   width: 11px;
@@ -718,11 +715,10 @@ input[type="checkbox"]:focus + .form-label {
 .result-item {
   margin: 0;
   padding: 0;
-  padding-top: 5px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  height: 145px;
+  min-height: 150px;
   font-weight: normal;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -734,6 +730,7 @@ input[type="checkbox"]:focus + .form-label {
 .result-item img {
   order: -1;
   margin-top: 25px;
+  margin-bottom: 25px;
   margin-left: 73px;
 }
 
@@ -749,13 +746,7 @@ input[type="checkbox"]:focus + .form-label {
 }
 
 .result-item p {
-  display: flex;
-  justify-content: flex-start;
   margin-bottom: 13px;
-}
-
-.hotels-type {
-  min-width: 116px;
 }
 
 .wrapper-buttons {
@@ -792,7 +783,6 @@ input[type="checkbox"]:focus + .form-label {
 .button-reservation {
   width: 140px;
   height: 27px;
-  margin-left: 7px;
   background-color: #766357;
   font-family: "PT Sans", Arial sans-serif;
 }
@@ -858,31 +848,25 @@ input[type="checkbox"]:focus + .form-label {
   width: 110px;
   height: 27px;
   padding-top: 5px;
-  margin-bottom: 10px;
   background-color: #f2f2f2;
 }
 
-.result-item .rating {
-  padding-top: 5px;
-}
-
-.filters-found {
+.found {
   margin-left: 73px;
   margin-top: 30px;
 }
 
-.filters-sort {
+.sort {
   margin-left: 50px;
   margin-top: 30px;
 }
 
-.filters-sort-list {
-  display: flex;
+.sort-list {
   padding-left: 38px;
-  margin-top: 35px;
+  margin-top: 30px;
 }
 
-.filters-sort-list li {
+.sort-list li {
   margin-right: 30px;
 }
 
@@ -891,20 +875,23 @@ input[type="checkbox"]:focus + .form-label {
 /*==Стоимость в сутки==*/
 
 .filters-hotels-range {
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   width: 318px;
   margin-top: 25px;
+=======
+  display: block;
+  width: 330px;
+>>>>>>> parent of cef24e2... Pixel Perfect выполнено.
   margin-left: auto;
   margin-right: 73px;
   color: #ffffff;
   text-transform: uppercase;
 }
 
-h3.filter-range-title {
-  margin: 0;
-  padding: 0;
+.filter-range-title {
   margin-bottom: 9px;
   margin-top: 4px;
   font-weight: 600;
@@ -913,13 +900,9 @@ h3.filter-range-title {
 }
 
 .price-controls {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   position: relative;
-  height: 32px;
+  min-height: 36px;
   margin-bottom: 20px;
-  width: 314px;
   font-size: 0;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -937,6 +920,7 @@ h3.filter-range-title {
 }
 
 .price-controls label {
+  display: inline-block;
   font-size: 14px;
   line-height: 38px;
   vertical-align: top;
@@ -946,16 +930,21 @@ h3.filter-range-title {
 .price-controls .min-price,
 .price-controls .max-price {
   width: 90px;
+<<<<<<< HEAD
   height: 45px; /*для верного отображения в IE*/
   padding-left: 48px;
   padding-top: 6px;
+=======
+  height: 15px;
+  padding-left: 65px;
+>>>>>>> parent of cef24e2... Pixel Perfect выполнено.
 }
 
 .price-controls input {
   width: 50px;
+  margin: 0;
   padding: 0; /*для верного отображения в IE*/
   padding-bottom: 7px; /*для верного отображения в IE*/
-  margin-right: 15px;
   color: inherit;
   font: inherit;
   background: none;
@@ -964,7 +953,6 @@ h3.filter-range-title {
 
 .range-controls {
   position: relative;
-  width: 318px;
   margin-bottom: 32px;
 }
 
@@ -974,7 +962,7 @@ h3.filter-range-title {
 }
 
 .range-controls .bar {
-  width: 255px;
+  width: 80%;
   height: 2px;
   background: #ffffff;
 }
@@ -1010,7 +998,6 @@ h3.filter-range-title {
 .button-transparent {
   display: block;
   margin: 0 auto;
-  margin-right: 92px;
   padding: 6px 35px;
   font-size: 14px;
   line-height: 20px;
@@ -1049,7 +1036,6 @@ iframe {
 .main-footer {
   margin: 0;
   padding: 0;
-  padding-top: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1115,7 +1101,7 @@ iframe {
 }
 
 .footer-copyright span {
-  margin-right: 4px;
+  margin-right: 8px;
   margin-bottom: 7px;
 }
 
