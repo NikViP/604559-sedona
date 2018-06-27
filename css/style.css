@@ -437,7 +437,11 @@ ol li:first-child {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .filters-sort-link:focus {
+=======
+.sort-link:active {
+>>>>>>> parent of cef24e2... Pixel Perfect выполнено.
 =======
 .sort-link:active {
 >>>>>>> parent of cef24e2... Pixel Perfect выполнено.
@@ -876,11 +880,16 @@ input[type="checkbox"]:focus + .form-label {
 
 .filters-hotels-range {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   width: 318px;
   margin-top: 25px;
+=======
+  display: block;
+  width: 330px;
+>>>>>>> parent of cef24e2... Pixel Perfect выполнено.
 =======
   display: block;
   width: 330px;
@@ -931,9 +940,14 @@ input[type="checkbox"]:focus + .form-label {
 .price-controls .max-price {
   width: 90px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   height: 45px; /*для верного отображения в IE*/
   padding-left: 48px;
   padding-top: 6px;
+=======
+  height: 15px;
+  padding-left: 65px;
+>>>>>>> parent of cef24e2... Pixel Perfect выполнено.
 =======
   height: 15px;
   padding-left: 65px;
