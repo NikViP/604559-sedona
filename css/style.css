@@ -719,6 +719,35 @@ input[type="checkbox"]:focus + .form-label {
   outline: none;
   box-shadow: none;
 >>>>>>> parent of 9564f7e... Закончена проверка CSS. Исправлены мелочи
+=======
+}
+
+.sort-up {
+  top: 39px;
+  left: 1092px;
+}
+
+.sort-down {
+  top: 39px;
+  left: 1114px;
+}
+
+.icon-sorting-svg {
+  color: rgba(0, 0, 0, 0.302);
+}
+
+.icon-sorting-svg:hover {
+  color: rgb(0, 0, 0);
+}
+
+.icon-sorting-svg:active {
+  color: rgb(129, 179, 210);
+}
+
+.icon-sorting-svg:focus {
+  outline: none;
+  box-shadow: none;
+>>>>>>> parent of 9564f7e... Закончена проверка CSS. Исправлены мелочи
   color: rgb(129, 179, 210);
 }
 
