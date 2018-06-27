@@ -177,7 +177,7 @@ ol li:first-child {
   width: 280px;
 }
 
-.reasons-list li {
+.reasons-list > li {
   height: 256px;
   background-color: #eeeeee;
 }
@@ -228,8 +228,9 @@ ol li:first-child {
   background-color: #c4c4c4;
 }
 
-.recommendation {
+li.recommendation {
   order: -1;
+  background-color: #ffffff;
 }
 
 .recommendation-list {
