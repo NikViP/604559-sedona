@@ -451,19 +451,7 @@ a.button-invitation {
   border-bottom: 1px dotted #81b3d2;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-.filters-sort-link:focus {
-=======
-.sort-link:active {
->>>>>>> parent of cef24e2... Pixel Perfect выполнено.
-=======
-.sort-link:active {
->>>>>>> parent of cef24e2... Pixel Perfect выполнено.
-=======
 .filters-sort-link:active {
->>>>>>> parent of 3cb48fc... Закончена проверка CSS
   color: rgb(0, 0, 0);
   border-bottom: none;
 }
@@ -602,24 +590,12 @@ a.button-invitation {
   text-align: left;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-.filters-hotels-range {
-  width: 320px;
-  margin-top: 32px;
-  margin-left: 325px;
-}
-
->>>>>>> parent of cef24e2... Pixel Perfect выполнено.
-=======
 .filters-hotels-range {
   width: 320px;
   margin-top: 28px;
   margin-left: 325px;
 }
 
->>>>>>> parent of 3cb48fc... Закончена проверка CSS
 .filters-hotels legend {
   font-size: 16px;
   line-height: 21px;
@@ -678,14 +654,11 @@ input[type="checkbox"]:checked + .form-label::after {
   z-index: 1;
 }
 
-<<<<<<< HEAD
 input[type="checkbox"]:focus + .form-label {
   outline: none;
   box-shadow: 0 0 2px 2px rgba(129, 179, 210, 0.8);
 }
 
-=======
->>>>>>> parent of 5b6d146... Доступность по TAB выполнена. Подключен скрипт для модального окна
 .sort-list {
   display: flex;
 }
@@ -722,6 +695,30 @@ input[type="checkbox"]:focus + .form-label {
 }
 
 .icon-sorting-svg:active {
+=======
+}
+
+.sort-down {
+  top: 39px;
+  left: 1114px;
+}
+
+.icon-sorting-svg {
+  color: rgba(0, 0, 0, 0.302);
+}
+
+.icon-sorting-svg:hover {
+  color: rgb(0, 0, 0);
+}
+
+.icon-sorting-svg:active {
+  color: rgb(129, 179, 210);
+}
+
+.icon-sorting-svg:focus {
+  outline: none;
+  box-shadow: none;
+>>>>>>> parent of 9564f7e... Закончена проверка CSS. Исправлены мелочи
   color: rgb(129, 179, 210);
 }
 
@@ -818,7 +815,6 @@ input[type="checkbox"]:focus + .form-label {
   background-color: #503e33;
 }
 
-<<<<<<< HEAD
 .button-invitation {
   align-self: center;
   width: 570px;
@@ -842,9 +838,7 @@ input[type="checkbox"]:focus + .form-label {
   box-shadow: 0 0 2px 2px rgba(129, 179, 210, 0.5);
 }
 
-=======
 .button-detailed:focus,
->>>>>>> parent of 3cb48fc... Закончена проверка CSS
 .button-reservation:focus {
   outline: none;
   box-shadow: 0 0 2px 2px rgba(129, 179, 210, 0.8);
@@ -899,24 +893,11 @@ input[type="checkbox"]:focus + .form-label {
 /*==Стоимость в сутки==*/
 
 .filters-hotels-range {
-<<<<<<< HEAD
-<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   width: 318px;
-<<<<<<< HEAD
   margin-top: 25px;
-=======
-  display: block;
-  width: 330px;
->>>>>>> parent of cef24e2... Pixel Perfect выполнено.
-=======
-  display: block;
-  width: 330px;
->>>>>>> parent of cef24e2... Pixel Perfect выполнено.
-=======
->>>>>>> parent of 3cb48fc... Закончена проверка CSS
   margin-left: auto;
   margin-right: 73px;
   color: #ffffff;
@@ -961,19 +942,9 @@ input[type="checkbox"]:focus + .form-label {
 .price-controls .min-price,
 .price-controls .max-price {
   width: 90px;
-<<<<<<< HEAD
-<<<<<<< HEAD
   height: 45px; /*для верного отображения в IE*/
   padding-left: 48px;
   padding-top: 6px;
-=======
-  height: 15px;
-  padding-left: 65px;
->>>>>>> parent of cef24e2... Pixel Perfect выполнено.
-=======
-  height: 15px;
-  padding-left: 65px;
->>>>>>> parent of cef24e2... Pixel Perfect выполнено.
 }
 
 .price-controls input {
@@ -1058,9 +1029,9 @@ input[type="checkbox"]:focus + .form-label {
 
 /*==END Стоимость в сутки==*/
 
-.map {
+/*.map {
   background-image: url("../img/map.jpg");
-}
+}*/
 
 /*==Футер==*/
 
