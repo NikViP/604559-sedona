@@ -169,10 +169,6 @@ ol li:first-child {
   font-weight: 700;
 }
 
-.reasons-list {
-  background-color: #eeeeee;
-}
-
 .reasons-item-banner p {
   width: 310px;
 }
@@ -183,6 +179,7 @@ ol li:first-child {
 
 .reasons-list li {
   height: 256px;
+  background-color: #eeeeee;
 }
 
 .reasons-list {
@@ -280,17 +277,6 @@ ol li:first-child {
   width: 440px;
   align-self: center;
   line-height: 24px;
-}
-
-a.button-invitation {
-  align-self: center;
-  width: 570px;
-  height: 85px;
-  background-color: #766357;
-  font-size: 21px;
-  margin-top: 20px;
-  vertical-align: middle;
-  line-height: 85px;
 }
 
 /*==Модальное окно==*/
@@ -461,7 +447,7 @@ a.button-invitation {
   border-bottom: 1px dotted #81b3d2;
 }
 
-.filters-sort-link:active {
+.filters-sort-link:focus {
   color: rgb(0, 0, 0);
   border-bottom: none;
 }
@@ -600,12 +586,6 @@ a.button-invitation {
   text-align: left;
 }
 
-.filters-hotels-range {
-  width: 320px;
-  margin-top: 28px;
-  margin-left: 325px;
-}
-
 .filters-hotels legend {
   font-size: 16px;
   line-height: 21px;
@@ -670,7 +650,7 @@ input[type="checkbox"]:checked + .form-label::after {
 
 input[type="checkbox"]:focus + .form-label {
   outline: none;
-  box-shadow: 0 0 2px 2px rgba(129, 179, 210, 0.8);
+  box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.8);
 }
 
 .sort-list {
@@ -721,6 +701,12 @@ input[type="checkbox"]:focus + .form-label {
 }
 
 .icon-sorting-svg:active {
+  color: rgb(129, 179, 210);
+}
+
+.icon-sorting-svg:focus {
+  outline: none;
+  box-shadow: none;
   color: rgb(129, 179, 210);
 }
 
@@ -819,10 +805,32 @@ input[type="checkbox"]:focus + .form-label {
   background-color: #503e33;
 }
 
-.button-detailed:focus,
-.button-reservation:focus {
+.button-invitation {
+  align-self: center;
+  width: 570px;
+  height: 85px;
+  background-color: #766357;
+  font-size: 21px;
+  margin-top: 20px;
+  vertical-align: middle;
+  line-height: 85px;
+}
+
+.button-invitation:focus {
+  outline: none;
+  color: #928a85;
+  background-color: #503e33;
+  box-shadow: 0 0 2px 2px rgba(101, 88, 71, 0.98);
+}
+
+.button-detailed:focus {
   outline: none;
   box-shadow: 0 0 2px 2px rgba(129, 179, 210, 0.8);
+}
+
+.button-reservation:focus {
+  outline: none;
+  box-shadow: 0 0 2px 2px rgba(101, 88, 71, 0.98);
 }
 
 .rating {
@@ -884,6 +892,7 @@ input[type="checkbox"]:focus + .form-label {
   flex-direction: column;
   align-items: flex-start;
   width: 318px;
+  margin-top: 25px;
   margin-left: auto;
   margin-right: 73px;
   color: #ffffff;
@@ -894,9 +903,10 @@ h3.filter-range-title {
   margin: 0;
   padding: 0;
   margin-bottom: 9px;
+  margin-top: 4px;
   font-weight: 600;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 19px;
 }
 
 .price-controls {
@@ -1018,6 +1028,7 @@ h3.filter-range-title {
   outline: none;
   color: #000000;
   background: #ffffff;
+  box-shadow: none;
 }
 
 /*==END Стоимость в сутки==*/
@@ -1050,7 +1061,7 @@ iframe {
 }
 
 .footer-logo {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -1069,6 +1080,7 @@ iframe {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 10px;
 }
 
 .button-social {
