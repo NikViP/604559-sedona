@@ -381,7 +381,6 @@ ol li:first-child {
   width: 38px;
   height: 38px;
   text-align: center;
-  /*outline: none;*/
 }
 
 .icon-plus {
@@ -680,6 +679,30 @@ input[type="checkbox"]:focus + .form-label {
   width: 11px;
   height: 10px;
   font-size: 0;
+  color: rgba(0, 0, 0, 0.302);
+}
+
+.sorting-active {
+  color: rgb(129, 179, 210);
+  box-shadow: none;
+}
+
+.sorting:hover {
+  color: rgb(0, 0, 0);
+}
+
+.sorting:active {
+  color: rgb(129, 179, 210);
+  box-shadow: none;
+}
+
+.sorting:focus {
+  outline: none;
+  color: rgb(129, 179, 210);
+}
+
+.icon-sorting-svg {
+  fill: currentcolor;
 }
 
 .sort-up {
@@ -690,24 +713,6 @@ input[type="checkbox"]:focus + .form-label {
 .sort-down {
   top: 39px;
   left: 1114px;
-}
-
-.icon-sorting-svg {
-  color: rgba(0, 0, 0, 0.302);
-}
-
-.icon-sorting-svg:hover {
-  color: rgb(0, 0, 0);
-}
-
-.icon-sorting-svg:active {
-  color: rgb(129, 179, 210);
-}
-
-.icon-sorting-svg:focus {
-  outline: none;
-  box-shadow: none;
-  color: rgb(129, 179, 210);
 }
 
 .result-list {
@@ -1105,6 +1110,10 @@ iframe {
   fill: #88b6d1;
   background-color: #5496bd;
   color: #88b6d1;
+}
+
+.footer-social .button-social:active {
+  box-shadow: none;
 }
 
 .footer-copyright span {
