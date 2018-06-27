@@ -164,6 +164,10 @@ ol li:first-child {
   font-weight: 700;
 }
 
+.reasons-list {
+  background-color: #eeeeee;
+}
+
 .reasons-item-banner p {
   width: 310px;
 }
@@ -174,7 +178,6 @@ ol li:first-child {
 
 .reasons-list li {
   height: 256px;
-  background-color: #eeeeee;
 }
 
 .reasons-list {
@@ -272,6 +275,17 @@ ol li:first-child {
   width: 440px;
   align-self: center;
   line-height: 24px;
+}
+
+a.button-invitation {
+  align-self: center;
+  width: 570px;
+  height: 85px;
+  background-color: #766357;
+  font-size: 21px;
+  margin-top: 20px;
+  vertical-align: middle;
+  line-height: 85px;
 }
 
 /*==Модальное окно==*/
@@ -439,6 +453,7 @@ ol li:first-child {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .filters-sort-link:focus {
 =======
 .sort-link:active {
@@ -446,6 +461,9 @@ ol li:first-child {
 =======
 .sort-link:active {
 >>>>>>> parent of cef24e2... Pixel Perfect выполнено.
+=======
+.filters-sort-link:active {
+>>>>>>> parent of 3cb48fc... Закончена проверка CSS
   color: rgb(0, 0, 0);
   border-bottom: none;
 }
@@ -585,6 +603,7 @@ ol li:first-child {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 .filters-hotels-range {
   width: 320px;
@@ -593,6 +612,14 @@ ol li:first-child {
 }
 
 >>>>>>> parent of cef24e2... Pixel Perfect выполнено.
+=======
+.filters-hotels-range {
+  width: 320px;
+  margin-top: 28px;
+  margin-left: 325px;
+}
+
+>>>>>>> parent of 3cb48fc... Закончена проверка CSS
 .filters-hotels legend {
   font-size: 16px;
   line-height: 21px;
@@ -654,7 +681,7 @@ input[type="checkbox"]:checked + .form-label::after {
 <<<<<<< HEAD
 input[type="checkbox"]:focus + .form-label {
   outline: none;
-  box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 2px 2px rgba(129, 179, 210, 0.8);
 }
 
 =======
@@ -695,12 +722,6 @@ input[type="checkbox"]:focus + .form-label {
 }
 
 .icon-sorting-svg:active {
-  color: rgb(129, 179, 210);
-}
-
-.icon-sorting-svg:focus {
-  outline: none;
-  box-shadow: none;
   color: rgb(129, 179, 210);
 }
 
@@ -797,6 +818,7 @@ input[type="checkbox"]:focus + .form-label {
   background-color: #503e33;
 }
 
+<<<<<<< HEAD
 .button-invitation {
   align-self: center;
   width: 570px;
@@ -820,9 +842,12 @@ input[type="checkbox"]:focus + .form-label {
   box-shadow: 0 0 2px 2px rgba(129, 179, 210, 0.5);
 }
 
+=======
+.button-detailed:focus,
+>>>>>>> parent of 3cb48fc... Закончена проверка CSS
 .button-reservation:focus {
   outline: none;
-  box-shadow: 0 0 2px 2px rgba(101, 88, 71, 0.98);
+  box-shadow: 0 0 2px 2px rgba(129, 179, 210, 0.8);
 }
 
 .rating {
@@ -880,6 +905,7 @@ input[type="checkbox"]:focus + .form-label {
   flex-direction: column;
   align-items: flex-start;
   width: 318px;
+<<<<<<< HEAD
   margin-top: 25px;
 =======
   display: block;
@@ -889,6 +915,8 @@ input[type="checkbox"]:focus + .form-label {
   display: block;
   width: 330px;
 >>>>>>> parent of cef24e2... Pixel Perfect выполнено.
+=======
+>>>>>>> parent of 3cb48fc... Закончена проверка CSS
   margin-left: auto;
   margin-right: 73px;
   color: #ffffff;
@@ -897,10 +925,9 @@ input[type="checkbox"]:focus + .form-label {
 
 .filter-range-title {
   margin-bottom: 9px;
-  margin-top: 4px;
   font-weight: 600;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 21px;
 }
 
 .price-controls {
@@ -1027,7 +1054,6 @@ input[type="checkbox"]:focus + .form-label {
   outline: none;
   color: #000000;
   background: #ffffff;
-  box-shadow: none;
 }
 
 /*==END Стоимость в сутки==*/
@@ -1059,7 +1085,7 @@ iframe {
 }
 
 .footer-logo {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -1078,7 +1104,6 @@ iframe {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 10px;
 }
 
 .button-social {
