@@ -550,7 +550,7 @@ ol li:first-child {
   background-color: #ffffff;
 }
 
-/*==Списки инфраструктура и тип жилья==*/
+/*==Списки: инфраструктура, тип жилья==*/
 
 .filters-hotels-wrapper {
   display: flex;
@@ -1035,7 +1035,6 @@ h3.filter-range-title {
   background: #ffffff;
   box-shadow: none;
 }
-
 /*==END Стоимость в сутки==*/
 
 .map {
@@ -1128,9 +1127,3 @@ iframe {
 .footer-copyright a:active path {
   fill: rgba(0, 0, 0, 0.302);
 }
-
-
-
-
-
-
