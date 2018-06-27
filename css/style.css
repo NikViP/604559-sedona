@@ -18,6 +18,11 @@ a {
   padding: 0;
 }
 
+*:focus {
+  outline: none;
+  box-shadow: 0 0 3px 3px rgba(129, 179, 210, 0.8);
+}
+
 fieldset {
   border: none;
 }
@@ -54,7 +59,7 @@ fieldset {
 .footer-social,
 .recommendation-list,
 .filter-list,
-.sort-list,
+.filters-sort-list,
 .result-list {
   list-style: none;
 }
@@ -164,10 +169,6 @@ ol li:first-child {
   font-weight: 700;
 }
 
-.reasons-list {
-  background-color: #eeeeee;
-}
-
 .reasons-item-banner p {
   width: 310px;
 }
@@ -178,6 +179,7 @@ ol li:first-child {
 
 .reasons-list li {
   height: 256px;
+  background-color: #eeeeee;
 }
 
 .reasons-list {
@@ -265,7 +267,7 @@ ol li:first-child {
 
 .invitation-header h2 {
   margin: 0;
-  margin-top: 55px;
+  margin-top: 60px;
   margin-bottom: 5px;
   font-size: 30px;
   font-weight: 700;
@@ -277,20 +279,10 @@ ol li:first-child {
   line-height: 24px;
 }
 
-a.button-invitation {
-  align-self: center;
-  width: 570px;
-  height: 85px;
-  background-color: #766357;
-  font-size: 21px;
-  margin-top: 20px;
-  vertical-align: middle;
-  line-height: 85px;
-}
-
 /*==Модальное окно==*/
 
 .invitation-modal {
+  display: none;
   position: absolute;
   top: 290px;
   left: 50%;
@@ -299,6 +291,10 @@ a.button-invitation {
   height: 395px;
   background: #ffffff;
   color: #000000;
+}
+
+.invitation-modal-show {
+  display: block;
 }
 
 .invitation-form {
@@ -385,7 +381,6 @@ a.button-invitation {
   width: 38px;
   height: 38px;
   text-align: center;
-  /*outline: none;*/
 }
 
 .icon-plus {
@@ -439,24 +434,24 @@ a.button-invitation {
 
 /*==END Модальное окно==*/
 
-.sort-link {
+.filters-sort-link {
   font-size: 12px;
   line-height: 18px;
   color: rgba(0, 0, 0, 0.302);
   border-bottom: 1px dotted #81b3d2;
 }
 
-.sort-link:hover {
+.filters-sort-link:hover {
   color: rgb(129, 179, 210);
   border-bottom: 1px dotted #81b3d2;
 }
 
-.filters-sort-link:active {
+.filters-sort-link:focus {
   color: rgb(0, 0, 0);
   border-bottom: none;
 }
 
-.sort-link-active {
+.filters-sort-link-active {
   color: rgb(129, 179, 210);
   border-bottom: none;
 }
@@ -555,7 +550,7 @@ a.button-invitation {
   background-color: #ffffff;
 }
 
-/*==Списки инфраструктура и тип жилья==*/
+/*==Списки: инфраструктура, тип жилья==*/
 
 .filters-hotels-wrapper {
   display: flex;
@@ -575,7 +570,7 @@ a.button-invitation {
 .filters-hotels-infrastructure {
   display: block;
   width: 150px;
-  margin-top: 32px;
+  margin-top: 28px;
   margin-left: 73px;
   padding: 0;
   text-align: left;
@@ -584,16 +579,10 @@ a.button-invitation {
 .filters-hotels-housing {
   display: block;
   width: 150px;
-  margin-top: 32px;
-  margin-left: 105px;
+  margin-top: 27px;
+  margin-left: 103px;
   padding: 0;
   text-align: left;
-}
-
-.filters-hotels-range {
-  width: 320px;
-  margin-top: 28px;
-  margin-left: 325px;
 }
 
 .filters-hotels legend {
@@ -613,6 +602,10 @@ a.button-invitation {
 .form-label {
   position: relative;
   padding-left: 30px;
+}
+
+.checkbox-checking {
+  margin-left: 10px;
 }
 
 .checkbox-checking:before {
@@ -656,7 +649,7 @@ input[type="checkbox"]:checked + .form-label::after {
 
 input[type="checkbox"]:focus + .form-label {
   outline: none;
-  box-shadow: 0 0 2px 2px rgba(129, 179, 210, 0.8);
+  box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.8);
 }
 
 .sort-list {
@@ -669,11 +662,47 @@ input[type="checkbox"]:focus + .form-label {
   position: relative;
 }
 
+.filters-result h3 {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.filters-result h3.filters-sort {
+  padding-top: 5px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
 .sorting {
   position: absolute;
   width: 11px;
   height: 10px;
   font-size: 0;
+  color: rgba(0, 0, 0, 0.302);
+}
+
+.sorting-active {
+  color: rgb(129, 179, 210);
+  box-shadow: none;
+}
+
+.sorting:hover {
+  color: rgb(0, 0, 0);
+}
+
+.sorting:active {
+  color: rgb(129, 179, 210);
+  box-shadow: none;
+}
+
+.sorting:focus {
+  outline: none;
+  color: rgb(129, 179, 210);
+}
+
+.icon-sorting-svg {
+  fill: currentcolor;
 }
 
 .sort-up {
@@ -684,71 +713,6 @@ input[type="checkbox"]:focus + .form-label {
 .sort-down {
   top: 39px;
   left: 1114px;
-}
-
-.icon-sorting-svg {
-  color: rgba(0, 0, 0, 0.302);
-}
-
-.icon-sorting-svg:hover {
-  color: rgb(0, 0, 0);
-}
-
-.icon-sorting-svg:active {
-=======
-}
-
-.sort-down {
-  top: 39px;
-  left: 1114px;
-}
-
-.icon-sorting-svg {
-  color: rgba(0, 0, 0, 0.302);
-}
-
-.icon-sorting-svg:hover {
-  color: rgb(0, 0, 0);
-}
-
-.icon-sorting-svg:active {
-  color: rgb(129, 179, 210);
-}
-
-.icon-sorting-svg:focus {
-  outline: none;
-  box-shadow: none;
->>>>>>> parent of 9564f7e... Закончена проверка CSS. Исправлены мелочи
-=======
-}
-
-.sort-up {
-  top: 39px;
-  left: 1092px;
-}
-
-.sort-down {
-  top: 39px;
-  left: 1114px;
-}
-
-.icon-sorting-svg {
-  color: rgba(0, 0, 0, 0.302);
-}
-
-.icon-sorting-svg:hover {
-  color: rgb(0, 0, 0);
-}
-
-.icon-sorting-svg:active {
-  color: rgb(129, 179, 210);
-}
-
-.icon-sorting-svg:focus {
-  outline: none;
-  box-shadow: none;
->>>>>>> parent of 9564f7e... Закончена проверка CSS. Исправлены мелочи
-  color: rgb(129, 179, 210);
 }
 
 .result-list {
@@ -761,10 +725,11 @@ input[type="checkbox"]:focus + .form-label {
 .result-item {
   margin: 0;
   padding: 0;
+  padding-top: 5px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  min-height: 150px;
+  height: 145px;
   font-weight: normal;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -776,7 +741,6 @@ input[type="checkbox"]:focus + .form-label {
 .result-item img {
   order: -1;
   margin-top: 25px;
-  margin-bottom: 25px;
   margin-left: 73px;
 }
 
@@ -792,7 +756,13 @@ input[type="checkbox"]:focus + .form-label {
 }
 
 .result-item p {
+  display: flex;
+  justify-content: flex-start;
   margin-bottom: 13px;
+}
+
+.hotels-type {
+  min-width: 116px;
 }
 
 .wrapper-buttons {
@@ -814,11 +784,6 @@ input[type="checkbox"]:focus + .form-label {
   font-weight: 700;
 }
 
-*:focus {
-  outline: none;
-  box-shadow: 0 0 2px 2px rgba(129, 179, 210, 0.8);
-}
-
 .button-detailed {
   outline: none;
   width: 110px;
@@ -829,6 +794,7 @@ input[type="checkbox"]:focus + .form-label {
 .button-reservation {
   width: 140px;
   height: 27px;
+  margin-left: 7px;
   background-color: #766357;
   font-family: "PT Sans", Arial sans-serif;
 }
@@ -864,13 +830,12 @@ input[type="checkbox"]:focus + .form-label {
 
 .button-detailed:focus {
   outline: none;
-  box-shadow: 0 0 2px 2px rgba(129, 179, 210, 0.5);
+  box-shadow: 0 0 2px 2px rgba(129, 179, 210, 0.8);
 }
 
-.button-detailed:focus,
 .button-reservation:focus {
   outline: none;
-  box-shadow: 0 0 2px 2px rgba(129, 179, 210, 0.8);
+  box-shadow: 0 0 2px 2px rgba(101, 88, 71, 0.98);
 }
 
 .rating {
@@ -895,25 +860,31 @@ input[type="checkbox"]:focus + .form-label {
   width: 110px;
   height: 27px;
   padding-top: 5px;
+  margin-bottom: 10px;
   background-color: #f2f2f2;
 }
 
-.found {
+.result-item .rating {
+  padding-top: 5px;
+}
+
+.filters-found {
   margin-left: 73px;
   margin-top: 30px;
 }
 
-.sort {
+.filters-sort {
   margin-left: 50px;
   margin-top: 30px;
 }
 
-.sort-list {
+.filters-sort-list {
+  display: flex;
   padding-left: 38px;
-  margin-top: 30px;
+  margin-top: 35px;
 }
 
-.sort-list li {
+.filters-sort-list li {
   margin-right: 30px;
 }
 
@@ -933,17 +904,24 @@ input[type="checkbox"]:focus + .form-label {
   text-transform: uppercase;
 }
 
-.filter-range-title {
+h3.filter-range-title {
+  margin: 0;
+  padding: 0;
   margin-bottom: 9px;
+  margin-top: 4px;
   font-weight: 600;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 19px;
 }
 
 .price-controls {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   position: relative;
-  min-height: 36px;
+  height: 32px;
   margin-bottom: 20px;
+  width: 314px;
   font-size: 0;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -961,7 +939,6 @@ input[type="checkbox"]:focus + .form-label {
 }
 
 .price-controls label {
-  display: inline-block;
   font-size: 14px;
   line-height: 38px;
   vertical-align: top;
@@ -978,9 +955,9 @@ input[type="checkbox"]:focus + .form-label {
 
 .price-controls input {
   width: 50px;
-  margin: 0;
   padding: 0; /*для верного отображения в IE*/
   padding-bottom: 7px; /*для верного отображения в IE*/
+  margin-right: 15px;
   color: inherit;
   font: inherit;
   background: none;
@@ -989,6 +966,7 @@ input[type="checkbox"]:focus + .form-label {
 
 .range-controls {
   position: relative;
+  width: 318px;
   margin-bottom: 32px;
 }
 
@@ -998,7 +976,7 @@ input[type="checkbox"]:focus + .form-label {
 }
 
 .range-controls .bar {
-  width: 80%;
+  width: 255px;
   height: 2px;
   background: #ffffff;
 }
@@ -1034,6 +1012,7 @@ input[type="checkbox"]:focus + .form-label {
 .button-transparent {
   display: block;
   margin: 0 auto;
+  margin-right: 92px;
   padding: 6px 35px;
   font-size: 14px;
   line-height: 20px;
@@ -1054,13 +1033,13 @@ input[type="checkbox"]:focus + .form-label {
   outline: none;
   color: #000000;
   background: #ffffff;
+  box-shadow: none;
 }
-
 /*==END Стоимость в сутки==*/
 
-/*.map {
+.map {
   background-image: url("../img/map.jpg");
-}*/
+}
 
 /*==Футер==*/
 
@@ -1071,6 +1050,7 @@ iframe {
 .main-footer {
   margin: 0;
   padding: 0;
+  padding-top: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1085,7 +1065,7 @@ iframe {
 }
 
 .footer-logo {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -1104,6 +1084,7 @@ iframe {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 10px;
 }
 
 .button-social {
@@ -1130,8 +1111,12 @@ iframe {
   color: #88b6d1;
 }
 
+.footer-social .button-social:active {
+  box-shadow: none;
+}
+
 .footer-copyright span {
-  margin-right: 8px;
+  margin-right: 4px;
   margin-bottom: 7px;
 }
 
