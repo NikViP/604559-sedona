@@ -841,6 +841,10 @@ input[type="checkbox"]:focus + .form-label {
   box-shadow: 0 0 2px 2px rgba(101, 88, 71, 0.98);
 }
 
+.button-invitation:active {
+  box-shadow: none;
+}
+
 .button-detailed:focus {
   outline: none;
   box-shadow: 0 0 2px 2px rgba(129, 179, 210, 0.8);
