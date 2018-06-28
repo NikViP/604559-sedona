@@ -13,18 +13,18 @@ body {
 }
 
 a {
-  text-decoration: none;
   margin: 0;
   padding: 0;
+  text-decoration: none;
+}
+
+fieldset {
+  border: none;
 }
 
 *:focus {
   outline: none;
   box-shadow: 0 0 3px 3px rgba(129, 179, 210, 0.8);
-}
-
-fieldset {
-  border: none;
 }
 
 .visually-hidden {
@@ -109,11 +109,11 @@ fieldset {
 
 .logo-up {
   position: absolute;
-  width: 138px;
-  height: 70px;
-  z-index: 1;
   top: 0;
   left: 50%;
+  z-index: 1;
+  width: 138px;
+  height: 70px;
   margin-left: -69px;
 }
 
@@ -121,20 +121,20 @@ fieldset {
   display: flex;
   position: relative;
   height: 509px;
+  margin-bottom: 63px;
   background-color: #81b3d2;
   background-image: url(../img/main-banner.jpg);
-  margin-bottom: 63px;
 }
 
 .main-billboard:after {
   position: absolute;
   content: "";
-  background-image: url("../img/origami.png");
-  width: 1200px;
-  height: 57px;
   z-index: 1;
   top: 452px;
   left: 0;
+  width: 1200px;
+  height: 57px;
+  background-image: url("../img/origami.png");
 }
 
 .group-inscriptions {
@@ -183,17 +183,17 @@ ol li:first-child {
 }
 
 .reasons-list {
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   width: 1200px;
 }
 
 .reasons-item-banner {
   display: flex;
-  color: #ffffff;
   margin-bottom: 36px;
+  color: #ffffff;
 }
 
 .reasons-item-banner.reverse {
@@ -234,11 +234,11 @@ li.recommendation {
 }
 
 .recommendation-list {
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   height: 330px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .recommendation-list p {
@@ -280,7 +280,9 @@ li.recommendation {
   line-height: 24px;
 }
 
-/*==Модальное окно==*/
+/*=============================*/
+     /*==Модальное окно==*/
+/*=============================*/
 
 .invitation-modal {
   display: none;
@@ -299,11 +301,11 @@ li.recommendation {
 }
 
 .invitation-form {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   margin: 55px;
-  display: flex;
-  flex-direction: column;
   width: 458px;
   min-height: 295px;
   font-weight: 700;
@@ -321,9 +323,9 @@ li.recommendation {
 }
 
 .invitation-form .form-label {
-  padding: 0;
   display: inline-block;
   vertical-align: top;
+  padding: 0;
   width: 115px;
   font-size: 14px;
   line-height: 38px;
@@ -338,22 +340,22 @@ li.recommendation {
 .form-input {
   box-sizing: border-box;
   padding: 8px;
-  border: 2px solid #f2f2f2;
   font-size: 14px;
   line-height: 18px;
   font-weight: 700;
   text-transform: uppercase;
   background: #f2f2f2;
+  border: 2px solid #f2f2f2;
 }
 
 .form-input:hover {
-  border-color: #ebebeb;
   background: #ebebeb;
+  border-color: #ebebeb;
 }
 
 .form-input:focus {
-  border-color: #e5e5e5;
   background: #fff;
+  border-color: #e5e5e5;
 }
 
 .icon-calendar {
@@ -385,16 +387,17 @@ li.recommendation {
 }
 
 .icon-plus {
+  padding-bottom: 2px;
   font-size: 28px;
   font-weight: 600;
-  padding-bottom: 2px;
 }
 
 .icon-minus {
   display: inline-block;
+  vertical-align: top;
+  padding-bottom: 2px;
   font-size: 28px;
   font-weight: 700;
-  padding-bottom: 2px;
 }
 
 .icon-count:hover {
@@ -407,6 +410,7 @@ li.recommendation {
 
 .counter {
   display: inline-block;
+  vertical-align: top;
   margin: 0;
   padding: 0;
 }
@@ -432,8 +436,9 @@ li.recommendation {
   line-height: 26px;
   background-color: #81b3d2;
 }
-
-/*==END Модальное окно==*/
+/*=============================*/
+/*== END Модальное окно==*/
+/*=============================*/
 
 .filters-sort-link {
   font-size: 12px;
@@ -443,26 +448,26 @@ li.recommendation {
 }
 
 .filters-sort-link:hover {
-  color: rgb(129, 179, 210);
   border-bottom: 1px dotted #81b3d2;
+  color: rgb(129, 179, 210);
 }
 
 .filters-sort-link:focus {
-  color: rgb(0, 0, 0);
   border-bottom: none;
+  color: rgb(0, 0, 0);
 }
 
 .filters-sort-link-active {
-  color: rgb(129, 179, 210);
   border-bottom: none;
+  color: rgb(129, 179, 210);
 }
 
 .hotels-name {
   font-size: 21px;
   line-height: 26px;
-  color: rgb(0, 0, 0);
   font-weight: 700;
   text-transform: uppercase;
+  color: rgb(0, 0, 0);
 }
 
 .hotels-name:hover {
@@ -551,15 +556,17 @@ li.recommendation {
   background-color: #ffffff;
 }
 
+/*=====================================*/
 /*==Списки: инфраструктура, тип жилья==*/
+/*=====================================*/
 
 .filters-hotels-wrapper {
   display: flex;
   margin-top: 0;
-  min-height: 217px;
-  background-color: #81b3d2;
-  background-image: url("../img/hotels-banner.jpg");
   width: 100%;
+  min-height: 217px;
+  background-image: url("../img/hotels-banner.jpg");
+  background-color: #81b3d2;
   color: #ffffff;
 }
 
@@ -612,6 +619,7 @@ li.recommendation {
 .checkbox-checking:before {
   content: "";
   display: inline-block;
+  vertical-align: top;
   position: absolute;
   top: 0;
   left: 0;
@@ -624,28 +632,30 @@ li.recommendation {
 input[type="checkbox"]:checked + .form-label::before {
   content: "";
   display: inline-block;
+  vertical-align: top;
   position: absolute;
   top: 8px;
   left: 6px;
+  z-index: 2;
   height: 8px;
   width: 3px;
   background-color: #ffffff;
   transform: rotate(-45deg);
-  z-index: 2;
 }
 
 input[type="checkbox"]:checked + .form-label::after {
   content: "";
   display: inline-block;
+  vertical-align: top;
   position: absolute;
   top: 8px;
   left: 7px;
+  z-index: 1;
   height: 3px;
   width: 20px;
   background-color: #ffffff;
   transform: rotate(-45deg);
   box-shadow: 0 0 1px 1px rgba(99, 143, 178, 1.0);
-  z-index: 1;
 }
 
 input[type="checkbox"]:focus + .form-label {
@@ -659,8 +669,8 @@ input[type="checkbox"]:focus + .form-label {
 
 .filters-result {
   display: flex;
-  min-height: 86px;
   position: relative;
+  min-height: 86px;
 }
 
 .filters-result h3 {
@@ -684,8 +694,8 @@ input[type="checkbox"]:focus + .form-label {
 }
 
 .sorting-active {
-  color: rgb(129, 179, 210);
   box-shadow: none;
+  color: rgb(129, 179, 210);
 }
 
 .sorting:hover {
@@ -693,8 +703,8 @@ input[type="checkbox"]:focus + .form-label {
 }
 
 .sorting:active {
-  color: rgb(129, 179, 210);
   box-shadow: none;
+  color: rgb(129, 179, 210);
 }
 
 .sorting:focus {
@@ -707,29 +717,31 @@ input[type="checkbox"]:focus + .form-label {
 }
 
 .sort-up {
+  position: absolute;
   top: 39px;
   left: 1092px;
 }
 
 .sort-down {
+  position: absolute;
   top: 39px;
   left: 1114px;
 }
 
 .result-list {
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
 .result-item {
-  margin: 0;
-  padding: 0;
-  padding-top: 5px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
   height: 145px;
   font-weight: normal;
   border-bottom: 1px solid #e5e5e5;
@@ -768,14 +780,15 @@ input[type="checkbox"]:focus + .form-label {
 
 .wrapper-buttons {
   display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   width: 258px;
-  justify-content: space-between;
 }
 
 .button {
   display: inline-block;
+  vertical-align: top;
   border: 0;
   font-size: 14px;
   line-height: 27px;
@@ -815,11 +828,10 @@ input[type="checkbox"]:focus + .form-label {
   align-self: center;
   width: 570px;
   height: 85px;
-  background-color: #766357;
-  font-size: 21px;
   margin-top: 20px;
-  vertical-align: middle;
+  font-size: 21px;
   line-height: 85px;
+  background-color: #766357;
 }
 
 .button-invitation:focus {
@@ -860,8 +872,8 @@ input[type="checkbox"]:focus + .form-label {
 .rating-volume {
   width: 110px;
   height: 27px;
-  padding-top: 5px;
   margin-bottom: 10px;
+  padding-top: 5px;
   background-color: #f2f2f2;
 }
 
@@ -889,9 +901,13 @@ input[type="checkbox"]:focus + .form-label {
   margin-right: 30px;
 }
 
-/*==END Списки==*/
+/*==========================================*/
+/*== END Списки: инфраструктура, тип жилья==*/
+/*==========================================*/
 
+/*=====================*/
 /*==Стоимость в сутки==*/
+/*=====================*/
 
 .filters-hotels-range {
   display: flex;
@@ -920,9 +936,9 @@ h3.filter-range-title {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  width: 314px;
   height: 32px;
   margin-bottom: 20px;
-  width: 314px;
   font-size: 0;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -940,10 +956,11 @@ h3.filter-range-title {
 }
 
 .price-controls label {
-  font-size: 14px;
-  line-height: 38px;
   vertical-align: top;
   cursor: pointer;
+  font-size: 14px;
+  line-height: 38px;
+
 }
 
 .price-controls .min-price,
@@ -1036,25 +1053,29 @@ h3.filter-range-title {
   background: #ffffff;
   box-shadow: none;
 }
-/*==END Стоимость в сутки==*/
+/*==========================*/
+/*== END Стоимость в сутки==*/
+/*==========================*/
 
 .map {
   background-image: url("../img/map.jpg");
 }
 
-/*==Футер==*/
+/*===========*/
+/*== Футер ==*/
+/*===========*/
 
 iframe {
   border: 0px;
 }
 
 .main-footer {
-  margin: 0;
-  padding: 0;
-  padding-top: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
   min-height: 120px;
   height: 120px; /*для центрирования в IE по вертикали*/
 }
@@ -1063,6 +1084,7 @@ iframe {
 .footer-logo,
 .footer-copyright {
   width: 33%;
+  justify-content: center;
 }
 
 .footer-logo {
@@ -1071,20 +1093,17 @@ iframe {
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
-  justify-content: center;
 }
 
 .footer-social {
   display: flex;
   padding: 0;
   padding-bottom: 10px;
-  justify-content: center;
 }
 
 .footer-copyright {
   display: flex;
   align-items: center;
-  justify-content: center;
   padding-bottom: 10px;
 }
 
@@ -1128,3 +1147,7 @@ iframe {
 .footer-copyright a:active path {
   fill: rgba(0, 0, 0, 0.302);
 }
+
+/*===============*/
+/*== END Футер ==*/
+/*===============*/
