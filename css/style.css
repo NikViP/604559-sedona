@@ -917,7 +917,7 @@ h3.filter-range-title {
 
 .price-controls {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   position: relative;
   height: 32px;
