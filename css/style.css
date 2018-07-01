@@ -285,19 +285,22 @@ li.recommendation {
 /*=============================*/
 
 .invitation-modal {
-  display: none;
+  display: block;
   position: absolute;
   top: 290px;
   left: 50%;
   margin-left: -285px;
+  overflow: hidden;
   width: 570px;
-  height: 395px;
+  height: 0;
+  transition: height ease-in-out 0.5s;
   background: #ffffff;
   color: #000000;
 }
 
 .invitation-modal-show {
   display: block;
+  height: 395px;
 }
 
 .invitation-form {
