@@ -55,7 +55,6 @@ fieldset {
 
 .navigation-list,
 .reasons-list,
-.reasons-list,
 .footer-social,
 .recommendation-list,
 .filter-list,
@@ -177,17 +176,17 @@ ol li:first-child {
   width: 280px;
 }
 
-.reasons-list > li {
-  height: 256px;
-  background-color: #eeeeee;
-}
-
 .reasons-list {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
   width: 1200px;
+}
+
+.reasons-list > li {
+  min-height: 256px;
+  background-color: #eeeeee;
 }
 
 .reasons-item-banner {
@@ -238,7 +237,7 @@ li.recommendation {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  height: 330px;
+  min-height: 330px;
 }
 
 .recommendation-list p {
