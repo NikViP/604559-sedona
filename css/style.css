@@ -5,7 +5,6 @@ body {
   font-family: "PT Sans", Arial sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.5;
   color: #000000;
   text-transform: uppercase;
   text-align: center;
@@ -267,8 +266,8 @@ li.recommendation {
 
 .invitation-header h2 {
   margin: 0;
-  margin-top: 60px;
-  margin-bottom: 5px;
+  margin-top: 53px;
+  margin-bottom: 24px;
   font-size: 30px;
   font-weight: 700;
 }
@@ -286,7 +285,7 @@ li.recommendation {
 .invitation-modal {
   display: block;
   position: absolute;
-  top: 290px;
+  top: 293px;
   left: 50%;
   margin-left: -285px;
   overflow: hidden;
@@ -831,7 +830,7 @@ input[type="checkbox"]:focus + .form-label {
   align-self: center;
   width: 570px;
   height: 85px;
-  margin-top: 70px;
+  margin-top: 48px;
   font-size: 21px;
   line-height: 85px;
   background-color: #766357;
