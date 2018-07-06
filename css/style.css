@@ -498,15 +498,15 @@ li.recommendation {
 }
 
 .housing:before {
-  background: url("../img/housing-icon.svg") no-repeat;
+  background: url("../img/housing-icon.png") no-repeat;
 }
 
 .food:before {
-  background: url("../img/food-icon.svg") no-repeat;
+  background: url("../img/food-icon.png") no-repeat;
 }
 
 .gifts:before {
-  background: url("../img/gift-icon.svg") no-repeat;
+  background: url("../img/gift-icon.png") no-repeat;
 }
 
 .number {
@@ -778,7 +778,7 @@ input[type="checkbox"]:focus + .form-label {
 .result-item p {
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 13px;
+  margin-bottom: 18px;
 }
 
 .hotels-type {
@@ -881,10 +881,11 @@ input[type="checkbox"]:focus + .form-label {
 }
 
 .rating-volume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 110px;
   height: 27px;
-  margin-bottom: 10px;
-  padding-top: 5px;
   background-color: #f2f2f2;
 }
 
