@@ -108,7 +108,7 @@ fieldset {
 .logo-up {
   position: absolute;
   top: 0;
-  left: 50%;
+  transform: translate(0);
   z-index: 1;
   width: 138px;
   height: 70px;
@@ -284,7 +284,7 @@ li.recommendation {
   margin: 0;
   width: 440px;
   align-self: center;
-  line-height: 1.4;
+  line-height: 1.7;
 }
 
 /*=============================*/
@@ -338,7 +338,7 @@ li.recommendation {
   padding: 0;
   width: 115px;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 38px;
   font-weight: 700;
 }
 
@@ -370,8 +370,8 @@ li.recommendation {
 
 .icon-calendar {
   position: absolute;
-  right: 9px;
-  top: 8px;
+  right: 8px;
+  top: 9px;
   color: rgba(0, 0, 0, 0.302);
 }
 
@@ -397,7 +397,6 @@ li.recommendation {
 }
 
 .icon-plus {
-  padding-bottom: 2px;
   font-size: 28px;
   font-weight: 600;
 }
@@ -441,7 +440,6 @@ li.recommendation {
   width: 458px;
   height: 58px;
   margin-top: 24px;
-  padding: 16px;
   font-size: 21px;
   line-height: 1.0;
   background-color: #81b3d2;
@@ -611,7 +609,7 @@ li.recommendation {
 }
 
 .filter-option {
-  margin-bottom: 22px;
+  margin-bottom: 30px;
 }
 
 .filter-option:first-child {
@@ -692,7 +690,7 @@ input[type="checkbox"]:focus + .form-label {
 .filters-result h3.filters-sort {
   padding-top: 5px;
   font-size: 12px;
-  line-height: 1.2;
+  line-height: 1.5;
   font-weight: 400;
 }
 
@@ -752,7 +750,7 @@ input[type="checkbox"]:focus + .form-label {
   justify-content: flex-start;
   align-items: center;
   margin: 0;
-  height: 148px;
+  height: 150px;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -769,6 +767,7 @@ input[type="checkbox"]:focus + .form-label {
   display: flex;
   justify-content: flex-start;
   margin: 0;
+  padding-bottom: 9px;
 }
 
 .result-item span {
@@ -791,14 +790,13 @@ input[type="checkbox"]:focus + .form-label {
 
 .result-wrapper h3 {
   margin: 0;
-  padding: 0;
 }
 
 .hotels-type {
   min-width: 116px;
 }
 
-.wrapper-buttons {
+.result-wrapper .wrapper-buttons {
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -828,7 +826,7 @@ input[type="checkbox"]:focus + .form-label {
 .button-reservation {
   width: 140px;
   height: 27px;
-  margin-left: 7px;
+  margin-right: 2px;
   background-color: #766357;
   font-family: "PT Sans", Arial sans-serif;
 }
@@ -848,7 +846,7 @@ input[type="checkbox"]:focus + .form-label {
   align-self: center;
   width: 570px;
   height: 85px;
-  margin-top: 48px;
+  margin-top: 46px;
   font-size: 21px;
   line-height: 3.0;
   background-color: #766357;
@@ -881,7 +879,7 @@ input[type="checkbox"]:focus + .form-label {
   justify-content: space-between;
   height: 90px;
   margin-left: auto;
-  margin-right: 73px;
+  margin-right: 70px;
 }
 
 .rating img {
@@ -892,6 +890,7 @@ input[type="checkbox"]:focus + .form-label {
 
 .rating-stars {
   align-self: flex-end;
+  margin-right: 5px;
 }
 
 .rating-volume {
@@ -943,10 +942,9 @@ input[type="checkbox"]:focus + .form-label {
 }
 
 h3.filter-range-title {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 9px;
-  margin-top: 4px;
+  margin-bottom: 11px;
+  margin-top: 3px;
+  padding-left: 2px;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.1;
@@ -969,7 +967,7 @@ h3.filter-range-title {
   content: "";
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 51%;
   width: 2px;
   height: 22px;
   background: #ffffff;
@@ -986,10 +984,17 @@ h3.filter-range-title {
 
 .price-controls .min-price,
 .price-controls .max-price {
+  padding-top: 19px;
   width: 90px;
   height: 45px; /*для верного отображения в IE*/
-  padding-left: 48px;
-  padding-top: 19px;
+}
+
+.price-controls .min-price {
+  padding-left: 65px;
+}
+
+.price-controls .max-price {
+  margin-right: 12px;
 }
 
 .price-controls input {
@@ -1051,10 +1056,10 @@ h3.filter-range-title {
 .button-transparent {
   display: block;
   margin: 0 auto;
-  margin-right: 92px;
+  margin-right: 93px;
   padding: 6px 35px;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 1.5;
   color: #ffffff;
   text-transform: uppercase;
   background: transparent;
@@ -1110,7 +1115,8 @@ iframe {
 }
 
 .footer-logo {
-  padding-bottom: 20px;
+  padding-bottom: 15px;
+  padding-left: 2px;
   font-size: 21px;
   line-height: 1.1;
   font-weight: 700;
@@ -1120,7 +1126,8 @@ iframe {
 .footer-social {
   display: flex;
   padding: 0;
-  padding-bottom: 16px;
+  padding-bottom: 12px;
+  padding-right: 6px;
 }
 
 .footer-copyright {
@@ -1159,7 +1166,7 @@ iframe {
 
 .footer-copyright span {
   margin-right: 4px;
-  margin-bottom: 7px;
+  margin-bottom: 3px;
 }
 
 .footer-copyright a:hover path {
