@@ -265,11 +265,8 @@ li.recommendation {
   margin: 23px 0;
 }
 
-.invitation {
-  position: relative;
-}
-
 .invitation-header {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -299,19 +296,19 @@ li.recommendation {
 .invitation-modal {
   display: block;
   position: absolute;
-  top: 290px;
   left: 50%;
   margin-left: -285px;
+  bottom: 0;
   overflow: hidden;
   width: 570px;
   height: 0;
-  transition: height ease-in-out 0.5s;
+  transition: bottom ease-in-out 0.5s, height ease-in-out 0.5s;
   background: #ffffff;
   color: #000000;
 }
 
 .invitation-modal-show {
-  display: block;
+  bottom: -395px;
   height: 395px;
 }
 
