@@ -99,9 +99,14 @@ body {
   min-width: 100px;
 }
 
+
 .navigation-list li:first-child,
 .navigation-list li:nth-child(2) {
   text-align: left;
+}
+
+.navigation-list li:nth-child(2) {
+  margin-right: 230px;
 }
 
 .navigation-list li:last-child,
