@@ -620,7 +620,7 @@ li.recommendation {
 
 .form-label {
   position: relative;
-  padding-left: 30px;
+  padding-left: 40px;
 }
 
 input[type="checkbox"] + .form-label:before {
@@ -639,6 +639,24 @@ input[type="checkbox"]:checked + .form-label:before {
   width: 27px;
   height: 23px;
   background-image: url("../img/checkbox-on.png");
+}
+
+input[type="checkbox"]:disabled + .form-label:after {
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-off-disabled.png");
+}
+
+input[type="checkbox"]:checked + .form-label:after {
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/checkbox-on-disabled.png");
 }
 
 /*input[type="checkbox"]:disabled + .form-label:before {
@@ -742,7 +760,7 @@ input[type="checkbox"]:checked + .form-label:before {
   display: flex;
   justify-content: flex-start;
   margin: 0;
-  padding-bottom: 9px;
+  padding-bottom: 5px;
 }
 
 .result-item span {
@@ -862,6 +880,7 @@ input[type="checkbox"]:checked + .form-label:before {
 .rating-stars {
   width: 0;
   height: 20px;
+  margin-right: -6px;
   background-image: url("../img/star_bg.png");
   background-repeat: repeat-x;
 }
