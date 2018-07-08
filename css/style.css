@@ -755,6 +755,7 @@ input[type="checkbox"]:focus + .form-label {
   justify-content: flex-start;
   align-items: center;
   margin: 0;
+  padding: 0 73px;
   min-height: 150px;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -765,7 +766,6 @@ input[type="checkbox"]:focus + .form-label {
 
 .result-item img {
   order: -1;
-  margin-left: 73px;
 }
 
 .result-item p {
@@ -887,7 +887,6 @@ input[type="checkbox"]:focus + .form-label {
   align-items: flex-end;
   height: 90px;
   margin-left: auto;
-  margin-right: 70px;
 }
 
 .rating-stars {
