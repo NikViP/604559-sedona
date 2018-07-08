@@ -11,14 +11,10 @@ body {
   background-color: #f2f2f2;
 }
 
-a {
+.link {
   margin: 0;
   padding: 0;
   text-decoration: none;
-}
-
-fieldset {
-  border: none;
 }
 
 *:focus {
@@ -50,6 +46,14 @@ fieldset {
 .wrapper-navigation {
   width: 1054px;
   margin: 0 73px;
+}
+
+.form-date,
+.counter,
+.counters,
+.filters-hotels-infrastructure,
+.filters-hotels-housing {
+  border: none;
 }
 
 .navigation-list,
