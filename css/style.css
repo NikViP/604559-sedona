@@ -219,6 +219,7 @@ body {
 .reasons-text {
   flex-grow: 1;
   width: 400px;
+  overflow: auto;
   background-color: #81b3d2;
 }
 
@@ -346,11 +347,6 @@ li.recommendation {
   font-weight: 700;
 }
 
-.form-input-date {
-  width: 343px;
-  padding-right: 38px;
-}
-
 .form-input {
   box-sizing: border-box;
   padding: 8px;
@@ -360,6 +356,11 @@ li.recommendation {
   text-transform: uppercase;
   background: #f2f2f2;
   border: 2px solid #f2f2f2;
+}
+
+.form-input-date {
+  width: 343px;
+  padding-right: 38px;
 }
 
 .form-input:hover {
@@ -790,6 +791,7 @@ input[type="checkbox"]:focus + .form-label {
 
 .result-wrapper h3 {
   margin: 0;
+  margin-top: -5px;
 }
 
 .result-image {
@@ -882,20 +884,37 @@ input[type="checkbox"]:focus + .form-label {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-end;
   height: 90px;
   margin-left: auto;
   margin-right: 70px;
 }
 
-.rating img {
-  margin: 0;
-  width: 18px;
-  height: 17px;
+.rating-stars {
+  width: 0;
+  height: 20px;
+  background-image: url("../img/star_bg.png");
+  background-repeat: repeat-x;
 }
 
-.rating-stars {
-  align-self: flex-end;
-  margin-right: 5px;
+.rating-stars[data-rating="1"] {
+  width: 24px;
+}
+
+.rating-stars[data-rating="2"] {
+  width: 48px;
+}
+
+.rating-stars[data-rating="3"] {
+  width: 72px;
+}
+
+.rating-stars[data-rating="4"] {
+  width: 96px;
+}
+
+.rating-stars[data-rating="5"] {
+  width: 120px;
 }
 
 .rating-volume {
