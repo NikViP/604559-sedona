@@ -784,7 +784,7 @@ input[type="checkbox"]:focus + .form-label {
   justify-content: space-between;
   width: 270px;
   min-height: 90px;
-  margin-left: 105px;
+  margin-left: 30px;
   text-align: left;
 }
 
