@@ -99,7 +99,6 @@ body {
   min-width: 100px;
 }
 
-
 .navigation-list li:first-child,
 .navigation-list li:nth-child(2) {
   text-align: left;
@@ -473,7 +472,7 @@ li.recommendation {
   color: rgb(0, 0, 0);
 }
 
-.filters-sort-link-active {
+.filters-sort-link-active:active {
   border-bottom: none;
   color: rgb(129, 179, 210);
 }
@@ -664,11 +663,9 @@ input[type="checkbox"]:checked + .form-label:after {
   background-image: url("../img/checkbox-on-disabled.png");
 }
 
-/*input[type="checkbox"]:disabled + .form-label:before {
-  width: 27px;
-  height: 23px;
-  background-image: url("../img/checkbox-on-disabled.png");
-}*/
+input[type="checkbox"]:focus + .form-label {
+  border-bottom: 1px dotted #f2f2f2;
+}
 
 .sort-list {
   display: flex;
